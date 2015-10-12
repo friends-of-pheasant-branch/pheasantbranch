@@ -1,0 +1,24 @@
+{
+  "name": "zealous",
+  "version": "1.0.0",
+  "description": "Landing page generator for mail outs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/este-tea/zealous.git"
+  },
+  "keywords": [
+    "npm",
+    "landing-page",
+    "generator"
+  ],
+  "author": "Tom Ray",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/este-tea/zealous/issues"
+  },
+  "homepage": "https://github.com/este-tea/zealous"
+}
