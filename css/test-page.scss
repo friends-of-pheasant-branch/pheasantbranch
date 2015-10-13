@@ -6,6 +6,19 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap";
 @import "../bower_components/bootstrap-sass/assets/stylesheets/_bootstrap-sprockets.scss";
 @import "../bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 
+// tds-vars
+@import "../_sass/_tds-variables.scss";
+// tds-fonts
+@import "../_sass/_tds-variables.scss";
+
+
+// Text
+h1 {
+  font-size: 48px;
+  font-family: $tds-font-family;
+  color: $tds-dk-blue;
+}
+
 // forms
 form {
   width: 600px;
@@ -14,10 +27,27 @@ label {
   font-weight: normal;
 }
 
+// Footer
+.site-footer {
+  margin-top: 145px;
+  background-color: #ccc;
+  li {
+    display: inline;
+  }
+}
 .tds-logo.tds-footer-logo {
+  position: relative;
+  top: -145px;
+  display: block;
   margin-right: auto;
   margin-left: auto;
   width: 200px;
-  height: 200px;
-  display: block;
+}
+
+// Thank you page
+.cover {
+  text-align: center;
+  h1 {
+    font-weight: bold;
+  }
 }
