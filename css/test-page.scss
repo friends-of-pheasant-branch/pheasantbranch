@@ -11,10 +11,15 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap";
 // tds-fonts
 @import "../_sass/_tds-variables.scss";
 
+// Static Page Width
+.container {
+  width: 970px;
+  max-width: none !important;
+}
 
 // Text
 h1 {
-  font-size: 48px;
+  font-size: 38px;
   //font-family: $tds-font-family;
   color: $tds-dk-blue;
   small {
@@ -30,18 +35,18 @@ h2 {
 }
 
 // Columns
-.col-md-8 {
+.col-md-7 {
   border-top: 3px dotted $tds-lt-blue;
 }
-.col-md-4 img {
+.col-md-5 img {
   position: relative;
   top: -100px;
-  right: 80px;
+  // right: 80px;
 }
 
 // forms
 form {
-  width: 600px;
+  //width: 600px;
 }
 label {
   font-weight: normal;
@@ -49,6 +54,7 @@ label {
 .btn-primary {
   background-color: $tds-dk-blue;
   border-radius: 0px;
+  border-color: transparent;
 }
 
 // Footer
