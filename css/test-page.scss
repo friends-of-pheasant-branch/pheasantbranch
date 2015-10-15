@@ -6,9 +6,9 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap";
 @import "../bower_components/bootstrap-sass/assets/stylesheets/_bootstrap-sprockets.scss";
 @import "../bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 
+// TDS fonts
+@import "../_sass/_tds-fonts.scss";
 // tds-vars
-@import "../_sass/_tds-variables.scss";
-// tds-fonts
 @import "../_sass/_tds-variables.scss";
 
 // Static Page Width
