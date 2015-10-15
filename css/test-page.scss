@@ -2,9 +2,7 @@
 # Front matter comment to ensure Jekyll properly reads file.
 ---
 
-$icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap";
-@import "../bower_components/bootstrap-sass/assets/stylesheets/_bootstrap-sprockets.scss";
-@import "../bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+@import "../_sass/_grid-bootstrap.scss";
 
 // TDS fonts
 @import "../_sass/_tds-fonts.scss";
@@ -33,14 +31,16 @@ h2 {
     color: $tds-lt-blue;
   }
 }
+sup {
+  font-size: 55%;
+}
 
 // Columns
-.col-md-7 {
+.col-xs-7 {
   border-top: 3px dotted $tds-lt-blue;
 }
-.col-md-5 img {
-  position: relative;
-  top: -100px;
+.col-xs-5 img {
+  margin-top: -100px;
   // right: 80px;
 }
 
@@ -76,6 +76,9 @@ label {
   margin-right: auto;
   margin-left: auto;
   width: 200px;
+}
+.footer-col {
+  padding-left: 0px !important;
 }
 
 // Thank you page
