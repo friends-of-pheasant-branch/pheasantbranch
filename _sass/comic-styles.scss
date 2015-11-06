@@ -1,0 +1,209 @@
+---
+# Use a comment to ensure Jekyll reads the file to be transformed into CSS later
+# only main files contain this front matter, not partials.
+---
+
+/* ===== Start tds styles ======================================================
+  ______ ____   _____     _____ __        __
+ /_  __// __ \\/ ___//   / ___// /___  __/ /__  _____
+  / // / / / //\__ \\    \__ \/ __/ / / / / _ \/ ___/
+ / // / /_/ //___/ //   ___/ / /_/ /_/ / /  __(__  )
+/_// /_____///____//   /____/\__/\__, /_/\___/____/
+                                /____/
+/* ========================================================================== */
+
+@import "base";
+@import "type";
+@import "syntax";
+@import "code";
+@import "layout";
+@import "masthead";
+@import "posts";
+@import "pagination";
+@import "message";
+
+//@import "tds-components/tds-navs";
+
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
+.container {width: 926px !important}
+
+// Fonts
+@import url("http://fast.fonts.net/t/1.css?apiType=css&projectid=e0f41ded-7901-446e-9e24-0572fc944638");
+@font-face{
+font-family:"CCWildWords W00 Regular";
+src:url("fonts/lp-fonts/comic-font/921d5bea-2a2c-42bd-9a05-8f7dcf662d56.eot?#iefix");
+src:url("fonts/lp-fonts/comic-font/921d5bea-2a2c-42bd-9a05-8f7dcf662d56.eot?#iefix") format("eot"),url("fonts/lp-fonts/comic-font/b6749a43-0f18-49d3-bef8-f031ca030270.woff2") format("woff2"),url("fonts/lp-fonts/comic-font/e29d210b-a985-4e95-a40f-c5b9e2a8ed89.woff") format("woff"),url("fonts/lp-fonts/comic-font/e173d402-36b3-41d8-a5d5-ee1816234a07.ttf") format("truetype"),url("fonts/lp-fonts/comic-font/da37e84c-4373-409b-810f-717119bf8d34.svg#da37e84c-4373-409b-810f-717119bf8d34") format("svg");
+}
+@font-face{
+font-family:"CCWildWords W00 Bold Italic";
+src:url("fonts/lp-fonts/comic-font/fd571a02-f314-45df-ab54-528ec16793cd.eot?#iefix");
+src:url("fonts/lp-fonts/comic-font/fd571a02-f314-45df-ab54-528ec16793cd.eot?#iefix") format("eot"),url("fonts/lp-fonts/comic-font/d7649d28-e892-4537-8fa7-cc8c69b73d10.woff2") format("woff2"),url("fonts/lp-fonts/comic-font/06ba30eb-4b02-4a15-b501-bef57fc211f8.woff") format("woff"),url("fonts/lp-fonts/comic-font/8fcc6ecb-566e-42e0-9275-1dc5fcf84c52.ttf") format("truetype"),url("fonts/lp-fonts/comic-font/b482621f-1c7b-4858-ac38-40a9ec3f8f76.svg#b482621f-1c7b-4858-ac38-40a9ec3f8f76") format("svg");
+}
+
+// text
+body {
+  font-family: "CCWildWords W00 Bold Italic";
+}
+h2 {
+  font-family: "CCWildWords W00 Bold Italic";
+}
+// Logo
+#tds-logo {
+  background-image: url(http://images.subscription.tdstelecom.com/EloquaImages/clients/TDSMetrocom/%7b4b837afa-7bfd-4587-ba45-52c07ea91486%7d_TDS-Logo.jpg);
+}
+
+// Header
+.jumbotron {
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  height: 423px;
+  background: url(http://images.subscription.tdstelecom.com/EloquaImages/clients/TDSMetrocom/%7b193dd275-0861-4374-bfb6-4d79949b4928%7d_header.jpg) left top no-repeat;
+  border-radius: 0px !important;
+  h1 {
+    color: yellow;
+    font-weight: bold;
+    font-family:'CCWildWords W00 Regular';
+  }
+}
+.col-sm-8.text {
+    width: 61%;
+}
+// Panels
+.panel {
+  margin-bottom: 0px;
+  background-color: transparent;
+  border-radius: 0px;
+  @include box-shadow(none);
+}
+.col-xs-8 .panel-body p {
+    width: 465px;
+}
+.panel-1 {
+  height: 256px;
+  background: url(http://images.subscription.tdstelecom.com/EloquaImages/clients/TDSMetrocom/%7bc5ac44aa-7e05-4fc8-a9eb-d4ba0669343b%7d_panel-1.jpg) -1px -1px no-repeat;
+}
+.panel.panel-1 img {
+    position: relative;
+    top: -55px;
+    left: -30px;
+}
+.panel-1 p,
+.panel-2 p,
+.panel-3 p {
+  padding-left: 50px;
+}
+.panel.panel-1 p {
+    float: left;
+    margin-top: -35px;
+    color: #fff;
+}
+.panel-2 {
+  height: 239px;
+  background: url(http://images.subscription.tdstelecom.com/EloquaImages/clients/TDSMetrocom/%7b8619c34d-76cf-4b5f-b24c-17f072c24f14%7d_panel-2.jpg) -1px -2px no-repeat;
+}
+.panel.panel-2 p {
+    margin-top: -15px;
+}
+.panel.panel-2 img {
+    position: relative;
+    top: -40px;
+    right: -210px;
+}
+.panel-3 {
+  height: 238px;
+  background: url(http://images.subscription.tdstelecom.com/EloquaImages/clients/TDSMetrocom/%7b4b542bad-e3db-4275-96bb-da6cd4916538%7d_panel-3.jpg) -1px -1px no-repeat;
+}
+.panel.panel-3 p {
+    margin-top: 35px;
+}
+.panel.panel-3 img {
+    position: relative;
+    left: -36px;
+    top: 5px;
+}
+
+// Form
+.form-box {
+  position: relative;
+}
+.form-sidebar {
+  position: absolute;
+  top: -60px;
+  right: 35px;
+  width: 320px;
+  color: #fff;
+  z-index: 1;
+}
+.form-top {
+    padding: 0 25px 15px 15px;
+    height: 100px;
+    text-align: left;
+    background: plum;
+    background: url(http://images.subscription.tdstelecom.com/EloquaImages/clients/TDSMetrocom/%7b692bd8fa-4a34-4324-a6d8-f8620931ebe4%7d_form-top.jpg) left top no-repeat;
+    h3 {
+      color: greenyellow;
+      text-transform: uppercase;
+      strong {
+        color: yellow;
+      }
+    }
+    p {
+      color: #fff;
+    }
+}
+small {
+  font-size: 10px;
+}
+.form-top img.quote {
+    position: relative;
+    top: 30px;
+    left: -30px;
+}
+.LV_invalid_field {
+    background-color: orange;
+}
+.LV_validation_message {
+    font-size: 10px;
+}
+.form-control {
+    border: 2px solid #141414;
+    border-radius: 0px;
+}
+.form-bottom.contact-form {
+  background: url(http://images.subscription.tdstelecom.com/EloquaImages/clients/TDSMetrocom/%7b1964e84b-1786-4eec-9f64-207a41dbe2ab%7d_form-fill.jpg) left top repeat-y;
+}
+.form-bottom {
+    min-height: 350px;
+    padding: 25px 25px 30px 25px;
+    text-align: left;
+}
+.form-bottom-shadow {
+  width: 321px;
+  height: 13px;
+  background: url(http://images.subscription.tdstelecom.com/EloquaImages/clients/TDSMetrocom/%7b5c8630b0-7109-4584-b9a7-88ebd54b40b1%7d_form-bottom.jpg) left top no-repeat;
+}
+
+// Footer
+// ---------
+
+// background image is wider here so need to  do this
+.col-xs-12.footer-full {
+  width: 101%;
+  margin-left: -2px;
+}
+.panel.footer {
+  height: 324px;
+  background: url(http://images.subscription.tdstelecom.com/EloquaImages/clients/TDSMetrocom/%7be0c2a8a8-152a-4c96-9f35-cb133a0ec7cb%7d_footer.jpg) -1px -6px no-repeat;
+}
+.panel.footer img {
+    position: relative;
+    left: 160px;
+    top: 30px;
+}
+.panel.footer h2 {
+    margin-left: 300px;
+}
+.panel.footer p {
+    padding: 50px;
+    width: 570px;
+}
