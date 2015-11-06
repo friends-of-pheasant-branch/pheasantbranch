@@ -1,0 +1,24 @@
+---
+# Front matter comment to ensure Jekyll properly reads file.
+---
+
+@import "../_sass/_grid-bootstrap.scss";
+@import "../bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+// TDS fonts
+@import "../_sass/_tds-fonts.scss";
+// tds-vars
+@import "../_sass/_tds-variables.scss";
+
+.tds-cp-logo {
+  width: 145px;
+  height: auto;
+}
+h1 {
+  color: $tds-dk-blue;
+}
+.box {
+  position: relative;
+  width: 54px;
+  height: 64px;
+  float: left;
+}
