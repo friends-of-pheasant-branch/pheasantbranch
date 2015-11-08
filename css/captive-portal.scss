@@ -9,16 +9,39 @@
 // tds-vars
 @import "../_sass/_tds-variables.scss";
 
-.tds-cp-logo {
-  width: 145px;
-  height: auto;
+.tds-width-container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  max-width: 990px;
 }
-h1 {
-  color: $tds-dk-blue;
+
+#tds-logo {
+  float: left;
+  width: 98px;
+  height: 40px;
+  margin: 40px 0px;
+  img {
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+}
+.banner-title {
+//font-family: "ITC Avant Garde Gothic W01";
+font-weight: normal;
+font-size: 2.25em;
+line-height: 1.1em;
+color: $tds-dk-blue;
+margin: 0px;
+}
+
+h3 {
+font-size: 20px;
+font-weight: 500;
+color: $tds-lt-blue;
 }
 .box {
   position: relative;
-  width: 54px;
-  height: 64px;
-  float: left;
 }
