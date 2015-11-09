@@ -6,17 +6,19 @@ date:   2015-11-06 13:56:31
 categories: jekyll update
 ---
 
-<div class="tds-width-container">
-  <a id="tds-logo">
-    <img src="{{ site.baseurl}}/public/img/tds-logo.png" />
-  <a/>
+<div class="container">
+  <div class="col-xs-12">
+    <a id="tds-logo">
+      <img src="{{ site.baseurl}}/public/img/tds-logo.png" />
+    </a>
+  </div>
 </div>
 
-<div>
+<div class="tds-width-container clearfix">
   <!-- Nav tabs -->
-  <div class="navbar navbar-default navbar-fixed-bottom">
+  <div class="tds-stepped-nav navbar navbar-fixed-bottom">
     <div class="container">
-      <ul class="nav nav-tabs" role="tablist">
+      <ul class="nav nav-tabs nav-justified" role="tablist">
         <li role="presentation" class="active"><a href="#step1" aria-controls="step1" role="tab" data-toggle="tab">Step 1</a></li>
         <li role="presentation"><a href="#step2" aria-controls="step2" role="tab" data-toggle="tab">Step 2</a></li>
         <li role="presentation"><a href="#step3" aria-controls="step3" role="tab" data-toggle="tab">Step 3</a></li>
@@ -26,30 +28,35 @@ categories: jekyll update
   </div>
   <!-- Tab panes -->
   <div class="tab-content">
-    <div role="tabpanel" class="tab-pane fade in active" id="step1">
-      <div class="col-md-8 col-md-offset-2">
-        <div class="box">
-          <h1 class="banner-title">
-            Make TDS your Home Page
-          </h1>
+    <div role="tabpanel" class="tab-pane active" id="step1">
+      <div class="e">
+        <h1 class="banner-title">
+          Make TDS your Home Page
+        </h1>
+      </div>
+      <div class="e">
+        <div class="picture">
+          <img src="{{ site.baseurl }}/public/img/tds-step1-homepage.png" />
         </div>
-        <div class="row">
-          <div class="col-md-6">
-            <div class="box">
-              <h3>
-                Step 1
-              </h3>
-              <p>
-                Make TDS.net your home page and have easy access to your email, account information, news, local weather, games and much more!
-              </p>
-            </div>
-
-          </div>
-          <div class="col-md-6"></div>
-        </div>
+        <h3>
+          Step 1
+        </h3>
+        <p>
+          Make TDS.net your home page and have easy access to your email, account information, news, local weather, games and much more!
+        </p>
+        <ul>
+          <li>Click the wrench ...</li>
+          <li>Go to Options ...</li>
+          <li>Click the Basics tab ...</li>
+          <li>In the Home Page, click on the "Open this page button." Enter https://portal.tds.net</li>
+        </ul>
+        <a href="#step2" class="btn gallery-btn">
+          Continue
+        </a>
       </div>
     </div>
-    <div role="tabpanel" class="tab-pane fade" id="step2">
+    <div class="col-md-4"></div>
+    <div role="tabpanel" class="tab-pane" id="step2">
       <div class="col-md-8 col-md-offset-2">
         <div class="hackspace"></div>
         <h1 class="banner-title">
@@ -63,7 +70,7 @@ categories: jekyll update
         </p>
       </div>
     </div>
-    <div role="tabpanel" class="tab-pane fade" id="step3">
+    <div role="tabpanel" class="tab-pane" id="step3">
       <div class="row">
         <div class="col-md-6">
           <h1 class="banner-title">
@@ -85,12 +92,10 @@ categories: jekyll update
             If you’d like to use your email program to get TDS email (i.e. Outlook, etc.), you can learn how here.
           </p>
         </div>
-        <div class="col-md-6">
 
-        </div>
       </div>
     </div>
-        <div role="tabpanel" class="tab-pane fade" id="step4">
+        <div role="tabpanel" class="tab-pane" id="step4">
           <div class="row">
             <div class="col-md-8 col-md-offset-2">
               <h1 class="banner-title">
@@ -106,6 +111,5 @@ categories: jekyll update
             </div>
           </div>
         </div>
-
   </div>
 </div>

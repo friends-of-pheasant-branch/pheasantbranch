@@ -30,11 +30,12 @@
 }
 .banner-title {
 //font-family: "ITC Avant Garde Gothic W01";
+display: block;
+margin: 0px;
 font-weight: normal;
 font-size: 2.25em;
 line-height: 1.1em;
 color: $tds-dk-blue;
-margin: 0px;
 }
 
 h3 {
@@ -42,6 +43,40 @@ font-size: 20px;
 font-weight: 500;
 color: $tds-lt-blue;
 }
-.box {
+.tds-slide-up {
   position: relative;
+}
+.picture {
+  margin: 24px 0;
+  padding: 16px 0;
+  border-top: solid 2px #0c8fd0;
+  border-bottom: solid 2px #0c8fd0;
+  overflow: hidden;
+  img {
+  padding: 16px;
+  background-color: #fff;
+  border: 2px solid #eee;
+  width: 98%;
+  height: auto;
+  margin: 0 auto;
+  }
+}
+
+.gallery-btn {
+  color: #fff !important;
+  color: #fff;
+  background-color: $tds-dk-blue;
+  border-color: transparent;
+  padding: 6px 14px 6px 12px !important;
+  text-align: left;
+  text-transform: capitalize;
+  border-radius: 0px;
+  margin: 16px 0;
+}
+
+.tds-stepped-nav {
+  .nav-tabs > li > a {
+    background-color: $tds-dk-blue;
+    color: $tds-white;
+  }
 }
