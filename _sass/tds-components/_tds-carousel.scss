@@ -1,0 +1,47 @@
+// tds-carousel.less
+
+// default height for carousel
+#slide-overlay {
+  height: 285px;
+  border-top-color: transparent;
+}
+// Slide controls
+#carousel-controls {
+  width: 100%;
+  position: relative;
+  bottom: -1.5em;
+  height: .5em;
+  text-align: center;
+}
+.carousel-control {
+  font-size: 11px;
+  text-shadow: none;
+  opacity: 1;
+}
+// carousel buttons
+.c-control-button {
+  padding-top: 7px;
+  width: 24px;
+  height: 25px;
+  text-align: center;
+  background: #A3AFD0;
+  border-radius: 15px;
+  // icon positioning
+  &.fa-chevron-left:before {
+    margin-left: -2px;
+  }
+  &.fa-chevron-right:before {
+    margin-right: -2px;
+  }
+  // hover state
+  &:hover {
+    background: $tds-dk-blue;
+  }
+}
+// carousel indicators
+.carousel-indicators li {
+  background-color: #A3AFD0;
+}
+.carousel-indicators .active {
+  background-color: $tds-dk-blue;
+}

@@ -1,0 +1,153 @@
+//tds-error-message.less
+
+// Main message set up.
+// types are determined by sub classes below
+.tds-error-msg {
+  @extend .alert;
+  padding: 16px 50px 16px 16px;
+  line-height: 24px;
+  font-family: $tds-font-family;
+  font-size: 14px;
+  font-weight: 400;
+  border-radius: 0px;
+  border: 0px solid transparent;
+  overflow: hidden;
+  a {
+    color: #000;
+    text-decoration: underline;
+  }
+  // gives value to contents like cloumns
+  #enteredAddress a {
+    text-decoration: underline;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  .tds-error-msg-description {
+    float: left;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+  }
+  .tds-error-msg-description .fa,
+  .tds-error-msg-description span {
+    float: left;
+    display: table;
+    margin-right: 15px;
+  }
+  // widths to contents
+  > .fa {
+    width: 25px;
+  }
+  .tds-error-msg-description {
+    //width: 90%;
+  }
+  // error items
+  ul {
+    display: block;
+    margin: 10px;
+    li {
+      display: block;
+      margin-bottom: 10px;
+      width: 100%;
+      &:before {
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+// Product callout messages design
+.prod-callout {
+  @extend .tds-error-msg;
+  @extend .tds-error-info;
+  @include make-sm-column-offset(1);
+  @include make-xs-column-offset(0);
+  @include make-sm-column(7);
+  @include make-xs-column(12);
+}
+
+// Colors
+// ---------
+
+// *Note* Border added here to inherit the color type
+
+// Red = critical
+.tds-error-critical {
+  @extend .alert-danger;
+  border-left: 3px solid $tds-red !important;
+}
+
+// Yellow = warning
+.tds-error-warning {
+  @extend .alert-warning;
+  color: #353535 !important;
+  border-left: 3px solid #ffce00 !important;
+  .fa {
+    font-size: 21px;
+    color: #ffce00;
+  }
+}
+
+// Green = success
+.tds-error-success {
+  @extend .alert-success;
+  color: #353535 !important;
+  border-left: 3px solid $tds-green !important;
+  .fa {
+    font-size: 21px;
+    color: $tds-green;
+  }
+}
+
+// Blue = info
+.tds-error-info {
+  @extend .alert-info;
+}
+
+// bundle error extender
+.bundle-error {
+  @extend .tds-error-msg;
+  @extend .tds-error-critical;
+  border: 0px solid transparent;
+  &:before {
+    @extend .fa;
+    content: "\f06a";
+    margin-right: 20px;
+    font: normal normal normal 14px/1 FontAwesome;
+    color: $tds-red;
+  }
+}
+
+// ===== Images/Icons ============================
+// when the alert box has an indicator image/font
+// or decorative icon not built into bootstrap
+// ===============================================
+
+// positioning when img is placed *above* alert-info
+.tds-pb-logo {
+  position: relative;
+  top: 18px;
+  text-align: center;
+}
+
+// ===== Empty Page ==============================
+// This is just to give a page that has no info
+// or content a min-height.
+// ===============================================
+.page_content {
+  min-height: 300px;
+  float: left;
+  display: inline;
+  margin-bottom: 40px;
+}
+
+// ===== New Alert message box concepts ==========
+// Starting here we will add the new method for
+// the alert messages and slowly delte the stuff
+// above this.
+// ===============================================
+
+.tds-alert-status {
+  background-color: $tds-lt-bluegray;
+}

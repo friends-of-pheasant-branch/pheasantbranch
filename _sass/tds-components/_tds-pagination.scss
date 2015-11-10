@@ -1,0 +1,56 @@
+// tds-pagination
+
+// search info message
+// TODO || need to move search to own less file
+.multiPathSearch .resultText {
+  @extend .tds-error-msg;
+  @extend .tds-error-info;
+}
+// search links see above
+.multiPathSearch > a {
+  @include make-xs-column(12);
+}
+
+.search-results-pagination {
+  @include make-xs-column(12);
+  display: inline-block;
+  margin: 24px 0px 40px 0px;
+  padding-bottom: 24px;
+  padding-left: 0;
+  font-family: $tds-font-family;
+  border-top: 3px solid $tds-lt-bluegray;
+  border-bottom: 1px solid $tds-lt-gray;
+}
+// Page name
+.search-current-page {
+  text-transform: uppercase;
+}
+.search-results-pagination span,
+.search-results-pagination a {
+  position: relative;
+  float: left;
+  margin-right: 12px;
+  padding: 6px 12px;
+  margin-left: -1px;
+  line-height: 1.42857143;
+  text-decoration: none;
+}
+// Current & hover
+.current-page,
+.search-results-pagination a:hover {
+  background-color: $tds-lt-bluegray;
+}
+
+// search results page layout
+// Maybe move this to layout section later.
+.multiPathSearch {
+  @extend .container;
+  //links
+  .col-sm-6 a {
+    color: #333;
+    margin-bottom: 40px;
+    &:hover {
+      color: $tds-dk-blue;
+    }
+  }
+}
