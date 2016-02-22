@@ -1,0 +1,13 @@
+.img-wrap {
+  overflow-x: hidden;
+  width: 200%;
+  margin-left: -50%;
+  @include phones {
+    width: 150%;
+    margin-left: -25%;
+  }
+  @include tablets {
+    width: 100%;
+    margin-left: 0;
+  }
+}

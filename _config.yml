@@ -4,15 +4,9 @@ email:                your-email@domain.com
 description:          > # this means to ignore newlines until "baseurl:"
                       A jekyll static site meant for generating quick page
                       layouts to make landing pages in a quicker manner.
-baseurl:              "" # the subpath of your site, e.g. /blog/
-url:                  "http://yourdomain.com" # the base hostname & protocol for your site
 
-# About
-twitter_username:     N/A
-github_username:      este-tea
+baseurl: "/zealous" # the subpath of your site, e.g. /blog
+url: "http://este-tea.github.io/zealous" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
-
-# Custom vars
-version:              1.0.0
