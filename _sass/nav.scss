@@ -1,0 +1,24 @@
+// Navbar
+.tdsvp-navbar.navbar {
+  background: #fff;
+  margin-bottom: 0px;
+  .navbar-brand {
+    padding: 4px 15px;
+  }
+}
+
+// Tabs
+.tdsvp-tab {
+  .nav-tabs>li>a {
+    color: #555;
+  }
+  .nav-tabs>li.active>a,
+  .nav-tabs>li.active>a:focus,
+  .nav-tabs>li.active>a:hover {
+    color: #258ecd;
+    cursor: default;
+    background-color: #fff;
+    border: 2px solid transparent;
+    border-bottom-color: #258ecd;
+  }
+}
