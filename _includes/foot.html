@@ -1,18 +1,3 @@
 <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <!-- Sticky Nav JS -->
-<script>
-  $(function() {
-    var $nav = $(".sticky-nav"),
-        stuck = "stuck",
-        offsetTop = $(".sticky-nav").offset().top;
-
-      $(window).scroll(function() {
-        if( $(this).scrollTop() + 50 >= offsetTop ) {
-          $nav.addClass(stuck);
-        } else {
-          $nav.removeClass(stuck);
-        }
-      });
-    });
-</script>

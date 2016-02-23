@@ -1,35 +1,14 @@
-<div id="carousel-slider" class="carousel slide" data-ride="carousel">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#carousel-slider" data-slide-to="0" class="active"></li>
-    <li data-target="#carousel-slider" data-slide-to="1" class=""></li>
-    <li data-target="#carousel-slider" data-slide-to="2"></li>
-  </ol>
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner" role="listbox">
-    <!-- Image 1 -->
-    <div class="item active">
-      <div class="img-wrap">
-        <img src="http://placehold.it/1600x483/19388a/ffffff" class="img-responsive" alt="Responsive image">
-      </div>
-      <div class="carousel-caption">
-      </div>
-    </div>
-    <!-- Image 2 -->
-    <div class="item">
-      <div class="img-wrap">
-        <img src="http://placehold.it/1600x483/51adf6/ffffff" class="img-responsive" alt="Responsive image">
-      </div>
-      <div class="carousel-caption">
-      </div>
-    </div>
-    <!-- Image 3 -->
-    <div class="item">
-      <div class="img-wrap">
-        <img src="http://placehold.it/1600x483/258ecd/ffffff" class="img-responsive" alt="Responsive image">
-      </div>
-      <div class="carousel-caption">
-      </div>
-    </div>
-  </div>
-</div>
+{% comment %}
+  * Add the following the front matter for a carousel:
+  * header: carousel
+{% endcomment %}
+{% if page.header == "carousel" %}
+  {% include carousel.html image1='http://placehold.it/1600x483/51adf6/ffffff' image2='http://placehold.it/1600x483/19388a/ffffff' image3='http://placehold.it/1600x483/258ecd/ffffff' %}
+{% endif %}
+{% comment %}
+  * Add the following the front matter for a image:
+  * header: image
+{% endcomment %}
+{% if page.header == "image" %}
+  {% include image.html image='http://placehold.it/1600x483/bbbbbb/ffffff' alt='Responsive image' %}
+{% endif %}
