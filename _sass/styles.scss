@@ -1,3 +1,7 @@
+@import "variables";
 @import "mixins";
 @import "media";
 @import "nav";
+body {
+  padding-top: 50px;
+}

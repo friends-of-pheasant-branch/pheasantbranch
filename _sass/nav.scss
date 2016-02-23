@@ -1,7 +1,14 @@
 // Navbar
 .tdsvp-navbar.navbar {
-  background: #fff;
+  border: none;
+  background: $white;
   margin-bottom: 0px;
+  // &.navbar-default .navbar-nav>.active>a,
+  // &.navbar-default .navbar-nav>.active>a:focus,
+  // &.navbar-default .navbar-nav>.active>a:hover {
+  //   background-color: $tds-lt-blue;
+  //   color: $white;
+  // }
   .navbar-brand {
     padding: 4px 15px;
   }
@@ -9,16 +16,42 @@
 
 // Tabs
 .tdsvp-tab {
+  .nav-tabs {
+    border-bottom: 1px solid $lines;
+  }
   .nav-tabs>li>a {
-    color: #555;
+    color: $text;
   }
   .nav-tabs>li.active>a,
   .nav-tabs>li.active>a:focus,
   .nav-tabs>li.active>a:hover {
-    color: #258ecd;
+    color: $tds-lt-blue;
     cursor: default;
-    background-color: #fff;
-    border: 2px solid transparent;
-    border-bottom-color: #258ecd;
+    background-color: $white;
+    border: 1px solid transparent;
+    border-bottom-color: $tds-lt-blue;
   }
+}
+
+// Sticky nav
+.sticky-nav {
+  background: #fff;
+  height: 42px;
+  z-index: 750;
+  margin-bottom: -42px;
+  @include prefix (transition, all 0.5s ease);
+}
+.stuck {
+  position: fixed;
+  width: 100%;
+  top: 50px;
+}
+.stuck-header {
+	height: 42px;
+	padding-top: 42px;
+	margin-bottom: -42px;
+}
+.stuck-footer {
+	height: 42px;
+	margin-top: -42px;
 }
