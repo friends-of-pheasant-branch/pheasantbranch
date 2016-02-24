@@ -1,6 +1,17 @@
-<nav class="tdsvp-navbar navbar navbar-default navbar-fixed-top">
+<div class="tdsvp-nav-header">
+  <div class="container-fluid clearfix">
+    <a href="{{ site.baseurl }}/" class="pull-left">
+      <div class="logo-wrap">
+        <img src="http://tdstelecom.com/content/dam/tdstelecom/images/logos/tds-logo.svg" alt="TDS Logo">
+      </div>
+    </a>
+    <div class="contact-info pull-right">
+        <a href="tel:1-408-555-5555">1-408-555-5555</a>
+    </div>
+  </div>
+</div>
+<nav class="tdsvp-navbar navbar navbar-default">
   <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
         <span class="sr-only">Toggle navigation</span>
@@ -8,24 +19,20 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">
-        <div class="logo-wrap">
-          <img src="http://tdstelecom.com/content/dam/tdstelecom/images/logos/tds-logo.svg" alt="TDS Logo">
-        </div>
-      </a>
     </div>
+    <!-- Brand and toggle get grouped for better mobile display -->
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li {% if page.url == "/" %} class="active"{% endif %}>
-          <a href="/">
+          <a href="{{ site.baseurl }}/">
             Home
             <span class="sr-only">(current)</span>
           </a>
         </li>
         <li {% if page.url == "/pricing-and-features" %} class="active"{% endif %}>
-          <a href="/pricing-and-features">
+          <a href="{{ site.baseurl }}/pricing-and-features">
             Pricing and Features
           </a>
         </li>
@@ -48,3 +55,4 @@
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
+<div class="second-nav"></div>

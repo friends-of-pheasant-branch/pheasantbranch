@@ -5,10 +5,3 @@
 {% if page.header == "carousel" %}
   {% include carousel.html image1='http://placehold.it/1600x483/51adf6/ffffff' image2='http://placehold.it/1600x483/19388a/ffffff' image3='http://placehold.it/1600x483/258ecd/ffffff' %}
 {% endif %}
-{% comment %}
-  * Add the following the front matter for a image:
-  * header: image
-{% endcomment %}
-{% if page.header == "image" %}
-  {% include image.html image='http://placehold.it/1600x483/bbbbbb/ffffff' alt='Responsive image' %}
-{% endif %}
