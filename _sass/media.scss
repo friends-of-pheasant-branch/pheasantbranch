@@ -1,6 +1,15 @@
 .logo-wrap {
   width: 98px;
   height: 40px;
+  .tdsvp-navbar .navbar-header & {
+    display: block !important;
+    width: 80px;
+    height: 32px;
+    margin: 8px 0 0 15px;
+    @include phones {
+      display: none !important;
+    }
+  }
 }
 .img-wrap {
   overflow-x: hidden;
