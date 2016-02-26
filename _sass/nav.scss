@@ -91,25 +91,54 @@
   background: $white;
   border-top: 1px solid $lines;
   padding-bottom: 6px;
+  h5 {
+    display: block !important;
+    @include phones {
+      display: none !important;
+    }
+  }
+  .nav-pills>li {
+    display: block;
+    margin: 4px 0;
+    width: 50%;
+    text-align: center;
+    @include phones {
+      text-align: center;
+      display: inline-block;
+      width: inherit;
+    }
+  }
   .nav-pills>li>a {
-    padding: 12px 15px 4px 15px;
+    border: 1px solid lighten($primary, 20%);
+    margin: 1px 8px;
+    @include phones {
+      padding: 12px 15px 4px 15px;
+      border: 0px;
+    }
     color: $text;
     border-radius: 0px;
     &:hover,
     &:focus {
-      background: $white;
-      border-bottom: 3px solid lighten($primary, 20%);
+      @include phones {
+        background: $white;
+        border-bottom: 3px solid lighten($primary, 20%);
+      }
     }
   }
   .nav-pills>li.active>a,
   .nav-pills>li.active>a:focus,
   .nav-pills>li.active>a:hover {
-    background-color: $white;
-    border-bottom: 3px solid lighten($primary, 30%);
-    color: $primary;
+    background: $primary;
+    color: $white;
+    @include phones {
+      color: $primary;
+      background-color: $white;
+      border-bottom: 3px solid $primary;
+    }
   }
 }
 .top-bar {
-  height: 1px;
-  background: $primary;
+  height: 6px;
+  background: $text;
+  border-bottom: 4px solid $primary;
 }

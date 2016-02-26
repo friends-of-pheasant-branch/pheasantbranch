@@ -35,7 +35,7 @@
           </a>
         </li>
         <li {% if page.url == "/pricing-and-features" %} class="active"{% endif %}>
-          <a href="{{ site.baseurl }}/pricing-and-features">
+          <a href="{{ site.baseurl }}/pricing-and-features.html">
             Pricing and Features
           </a>
         </li>
@@ -61,10 +61,14 @@
 <div class="tdsvp-secondary-nav">
   <div class="container">
     <ul class="nav nav-pills">
-      <h5>Parent:</h5>
-      <li role="presentation"><a href="#">Home</a></li>
-      <li role="presentation" class="active"><a href="#">Profile</a></li>
-      <li role="presentation"><a href="#">Messages</a></li>
+      {% if page.category == "pricing-and-features" %}
+      <h5>{{page.parent}}</h5>
+      {% for subcategories in site.categories.pricing-and-features %}
+      <li role="presentation">
+        <a href="{{site.baseurl}}/{{subcategories.permalink}}">{{subcategories.title}}</a>
+      </li>
+      {% endfor %}
+      {% endif %}
     </ul>
   </div>
 </div>
