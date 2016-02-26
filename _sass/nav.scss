@@ -19,6 +19,15 @@
   border: none;
   background: darken($white, 2.5%);
   margin-bottom: 0px;
+  // mobile only
+  .navbar-header {
+    background: $white;
+    .navbar-toggle {
+      border-radius: 0px;
+      border: 1px solid $lines;
+      padding: 8px 10px;
+    }
+  }
   &.navbar-default .navbar-nav>.active>a,
   &.navbar-default .navbar-nav>.active>a:focus,
   &.navbar-default .navbar-nav>.active>a:hover {
