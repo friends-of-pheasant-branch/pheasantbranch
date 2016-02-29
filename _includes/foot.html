@@ -1,3 +1,21 @@
-<script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-<!-- Sticky Nav JS -->
+<!-- Dropdown JS -->
+<script>
+  $(document).ready(function() {
+    var $link = $('ul#tds-voip-nav li');
+    var dropdown = $('ul.tdsvp-secondary-nav');
+    var hideIt = ('hide-dropdown');
+
+    $('ul#tds-voip-nav li').hover(
+        function() {
+            // Called when the mouse enters the element
+          $(this).find(dropdown).removeClass(hideIt);
+        },
+        function() {
+            // Called when the mouse leaves the element
+          $(this).find(dropdown).addClass(hideIt);
+        }
+     );
+  });
+</script>
