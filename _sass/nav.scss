@@ -17,8 +17,15 @@
 .tdsvp-navbar.navbar {
   min-height: 34px;
   border: none;
-  background: darken($white, 2.5%);
+  border-radius: 0px;
+  background: $white;
+  @include phones {
+    background: darken($white, 2.5%);
+  }
   margin-bottom: 0px;
+  @include phones {
+    margin-bottom: 16px;
+  }
   // mobile only
   .navbar-header {
     background: $white;
@@ -64,7 +71,7 @@
     padding-bottom: 10px;
     padding-top: 10px;
     text-transform: uppercase;
-    font-weight: 500;
+    font-weight: 400;
     color: $text;
   }
 }
@@ -87,13 +94,18 @@
     border-bottom-color: $tds-lt-blue;
   }
 }
+
+// Dropdown on Desktop
+// Nested nav on Mobile
 .tdsvp-secondary-nav {
-  background: $white;
+  background: darken($white, 2.5%);
   border-top: 1px solid $lines;
   padding-bottom: 6px;
   position: relative;
   @include phones {
     position: absolute;
+    background: $white;
+    @include prefix(box-shadow, 0 6px 12px rgba(0,0,0,.175));
   }
   &.hide-dropdown {
     display: block;
@@ -104,9 +116,7 @@
   >li {
     display: block;
     float: none;
-    padding-left: 15px;
     @include phones {
-      padding-left: 0px;
       min-width: 200px;
       width: inherit;
     }
@@ -114,6 +124,10 @@
   li>a {
     color: $text;
     border-radius: 0px;
+    text-indent: 15px;
+    @include phones {
+      text-indent: 0px;
+    }
   }
   .nav-pills>li.active>a,
   .nav-pills>li.active>a:focus,
