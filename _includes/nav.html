@@ -40,7 +40,7 @@
           </a>
             <ul class="tdsvp-secondary-nav nav hide-dropdown">
               {% for subcategories in site.categories.pricing-and-features %}
-              <li role="presentation">
+              <li role="presentation" {% if page.url contains {{subcategories.permalink}} %} class="active"{% endif %}>
                 <a href="{{site.baseurl}}/{{subcategories.permalink}}">{{subcategories.title}}</a>
               </li>
               {% endfor %}
@@ -52,7 +52,7 @@
           </a>
           <ul class="tdsvp-secondary-nav nav hide-dropdown">
             {% for subcategories in site.categories.resources %}
-            <li role="presentation">
+            <li role="presentation" {% if page.url contains {{subcategories.permalink}} %} class="active"{% endif %}>
               <a href="{{site.baseurl}}/{{subcategories.permalink}}">{{subcategories.title}}</a>
             </li>
             {% endfor %}
@@ -63,10 +63,17 @@
             Case Studies
           </a>
         </li>
-        <li>
-          <a href="#">
+        <li {% if page.url contains "/why-tds" %} class="active"{% endif %}>
+          <a href="{{ site.baseurl }}/why-tds.html">
             Why TDS
           </a>
+          <ul class="tdsvp-secondary-nav nav hide-dropdown">
+            {% for subcategories in site.categories.why-tds %}
+            <li role="presentation" {% if page.url contains {{subcategories.permalink}} %} class="active"{% endif %}>
+              <a href="{{site.baseurl}}/{{subcategories.permalink}}">{{subcategories.title}}</a>
+            </li>
+            {% endfor %}
+          </ul>
         </li>
       </ul>
     </div><!-- /.navbar-collapse -->

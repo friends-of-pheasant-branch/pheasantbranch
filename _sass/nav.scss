@@ -35,13 +35,20 @@
       padding: 8px 10px;
     }
   }
-  &.navbar-default .navbar-nav>.active>a,
-  &.navbar-default .navbar-nav>.active>a:focus,
-  &.navbar-default .navbar-nav>.active>a:hover {
-    background-color: $white;
-    border-left: 1px solid $lines;
-    border-right: 1px solid $lines;
-    color: $primary;
+  &.navbar-default .navbar-nav>.active {
+    >a,
+    >a:focus,
+    >a:hover {
+      background-color: $white;
+      border-left: 1px solid $lines;
+      border-right: 1px solid $lines;
+      color: $primary;
+    }
+    >a.indicate,
+    >a.indicate:focus,
+    >a.indicate:hover {
+      color: $text;
+    }
   }
   &.navbar-default .navbar-nav>.active {
     position: relative;
@@ -129,15 +136,13 @@
       text-indent: 0px;
     }
   }
-  .nav-pills>li.active>a,
-  .nav-pills>li.active>a:focus,
-  .nav-pills>li.active>a:hover {
-    background: $primary;
-    color: $white;
+  >li.active>a,
+  >li.active>a:focus,
+  >li.active>a:hover {
+    color: $primary;
     @include phones {
       color: $primary;
       background-color: $white;
-      border-bottom: 3px solid $primary;
     }
   }
 }
