@@ -129,6 +129,7 @@
   position: relative;
   @include phones {
     position: absolute;
+    z-index: 2000;
     background: $white;
     @include prefix(box-shadow, 0 6px 12px rgba(0,0,0,.175));
   }
