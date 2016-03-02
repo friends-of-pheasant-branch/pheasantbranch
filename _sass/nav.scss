@@ -8,6 +8,24 @@
   }
   .contact-info {
     padding-top: 8px;
+    span {
+      position: relative;
+      &:before {
+        position: absolute;
+        content: "";
+        display: block;
+        top: -8px;
+        left: -36px;
+        height: 32px;
+        width: 32px;
+        background-image: url(http://tdstelecom.com/content/dam/tdstelecom/images/ui/contact/icon_contact-call.svg);
+        background-size: 16px 16px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: $primary;
+        border-radius: 50%;
+      }
+    }
     a {
       color: #777;
     }
