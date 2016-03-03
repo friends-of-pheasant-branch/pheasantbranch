@@ -24,10 +24,8 @@
     width: 100%;
     margin-left: 0;
   }
-  .item & {
-    z-index: 100;
-  }
-  .item.active & {
-    z-index: 200;
-  }
+}
+.item {
+  width: 100%;
+  overflow-x: hidden;
 }
