@@ -1,0 +1,75 @@
+// Dropdown on Desktop
+// Nested nav on Mobile
+.tdsvp-secondary-nav {
+  background: darken($white, 2.5%);
+  position: relative;
+  top: 0;
+  @include phones {
+    display: block;
+    position: absolute;
+    top: -2px;
+    z-index: 1000;
+    border-top: 2px solid $lines;
+    padding-bottom: 6px;
+    background: $white;
+    @include prefix(box-shadow, 0 6px 12px rgba(0,0,0,.175));
+  }
+  &.hide-dropdown {
+    display: block;
+    @include phones {
+      display: none;
+    }
+  }
+  >li {
+    display: block;
+    float: none;
+    &:nth-of-type(1) {
+      background: $white;
+      a {
+        text-indent: 0px;
+      }
+    }
+    @include phones {
+      width: inherit;
+      white-space: nowrap;
+      min-width: 160px;
+      &:nth-of-type(1) {
+        background: darken($white, 1.5%);
+        border-bottom: 1px solid #eee;
+        border-top: 2px solid darken($white, 1.5%);
+        &.active {
+          border-top: 2px solid $primary;
+        }
+      }
+    }
+  }
+  li>a {
+    color: $text;
+    border-radius: 0px;
+    text-indent: 15px;
+    @include phones {
+      text-indent: 0px;
+    }
+  }
+  >li.active>a,
+  >li.active>a:focus,
+  >li.active>a:hover {
+    color: $primary;
+    @include phones {
+      color: $primary;
+      background-color: $white;
+    }
+  }
+}
+.cloak {
+  position: fixed;
+  display: none;
+  z-index: 750;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: transparent;
+}

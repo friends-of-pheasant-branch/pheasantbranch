@@ -38,10 +38,7 @@
             <span class="sr-only">(current)</span>
           </a>
         </li>
-        <li {% if page.url contains "/pricing-and-features" %} class="active"{% endif %}>
-          <a href="{{ site.baseurl }}/pricing-and-features.html">
-            Pricing and Features
-          </a>
+          <li data-description="Pricing and Features" class='tdsvp-dropover {% if page.url contains "/pricing-and-features" %}active{% endif %}'>
             <ul class="tdsvp-secondary-nav nav hide-dropdown">
               {% for subcategories in site.categories.pricing-and-features %}
               <li role="presentation" {% if page.url contains {{subcategories.permalink}} %} class="active"{% endif %}>
@@ -49,11 +46,8 @@
               </li>
               {% endfor %}
             </ul>
-        </li>
-        <li {% if page.url contains "/resources" %} class="active"{% endif %} >
-          <a href="{{ site.baseurl }}/resources.html">
-            Resources
-          </a>
+          </li>
+        <li data-description="Resources" class='tdsvp-dropover {% if page.url contains "/resources" %}active{% endif %}' >
           <ul class="tdsvp-secondary-nav nav hide-dropdown">
             {% for subcategories in site.categories.resources %}
             <li role="presentation" {% if page.url contains {{subcategories.permalink}} %} class="active"{% endif %}>
@@ -83,17 +77,3 @@
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
-<!-- <div class="tdsvp-secondary-nav">
-  <div class="container">
-    <ul class="nav nav-pills">
-      {% if page.category == "pricing-and-features" %}
-      <h5>{{page.parent}}</h5>
-      {% for subcategories in site.categories.pricing-and-features %}
-      <li role="presentation">
-        <a href="{{site.baseurl}}/{{subcategories.permalink}}">{{subcategories.title}}</a>
-      </li>
-      {% endfor %}
-      {% endif %}
-    </ul>
-  </div>
-</div> -->

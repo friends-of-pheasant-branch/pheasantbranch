@@ -3,19 +3,23 @@
 <!-- Dropdown JS -->
 <script>
   $(document).ready(function() {
-    var $link = $('ul#tds-voip-nav li');
+    var link = $('ul#tds-voip-nav li');
     var dropdown = $('ul.tdsvp-secondary-nav');
     var hideIt = ('hide-dropdown');
-
-    $('ul#tds-voip-nav li').hover(
-        function() {
-            // Called when the mouse enters the element
-          $(this).find(dropdown).removeClass(hideIt);
-        },
-        function() {
-            // Called when the mouse leaves the element
-          $(this).find(dropdown).addClass(hideIt);
-        }
-     );
+    var cloak = $('.cloak');
+    $(link).click(
+      function() {
+        $(dropdown).addClass(hideIt);
+      });
+    $(link).click(
+      function() {
+        $(this).find(dropdown).removeClass(hideIt);
+        $(cloak).show();
+      });
+    $(cloak).click(
+      function(){
+        $(dropdown).addClass(hideIt);
+        $(cloak).hide();
+    });
   });
 </script>
