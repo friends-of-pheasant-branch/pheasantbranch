@@ -1,32 +1,7 @@
-<div class="tdsvp-nav-header">
-  <div class="container-fluid clearfix">
-    <a href="{{ site.baseurl }}/" class="pull-left">
-      <div class="logo-wrap">
-        <img src="http://tdstelecom.com/content/dam/tdstelecom/images/logos/tds-logo.svg" alt="TDS Logo">
-      </div>
-    </a>
-    <div class="contact-info pull-right">
-      <a href="tel:1-408-555-5555">
-      <span>
-          1-408-555-5555
-      </span>
-    </a>
-    </div>
-  </div>
-</div>
+{% include nav-header.html %}
 <nav class="tdsvp-navbar navbar navbar-default">
   <div class="container-fluid">
-    <div class="navbar-header">
-      <a href="{{ site.baseurl }}/" class="pull-left">
-        <div class="logo-wrap">
-          <img src="http://tdstelecom.com/content/dam/tdstelecom/images/logos/tds-logo.svg" alt="TDS Logo">
-        </div>
-      </a>
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#tds-voip-menu" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="">MENU</span>
-      </button>
-    </div>
+    {% include navbar-header.html %}
     <!-- Brand and toggle get grouped for better mobile display -->
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -38,41 +13,14 @@
             <span class="sr-only">(current)</span>
           </a>
         </li>
-          <li data-description="Pricing and Features" class='tdsvp-dropover {% if page.url contains "/pricing-and-features" %}active{% endif %}'>
-            <ul class="tdsvp-secondary-nav nav hide-dropdown">
-              {% for subcategories in site.categories.pricing-and-features %}
-              <li role="presentation" {% if page.url contains {{subcategories.permalink}} %} class="active"{% endif %}>
-                <a href="{{site.baseurl}}/{{subcategories.permalink}}">{{subcategories.title}}</a>
-              </li>
-              {% endfor %}
-            </ul>
-          </li>
-        <li data-description="Resources" class='tdsvp-dropover {% if page.url contains "/resources" %}active{% endif %}' >
-          <ul class="tdsvp-secondary-nav nav hide-dropdown">
-            {% for subcategories in site.categories.resources %}
-            <li role="presentation" {% if page.url contains {{subcategories.permalink}} %} class="active"{% endif %}>
-              <a href="{{site.baseurl}}/{{subcategories.permalink}}">{{subcategories.title}}</a>
-            </li>
-            {% endfor %}
-          </ul>
-        </li>
+        {% include dropdown.html description='Pricing and Features' category='pricing-and-features' permalink='pricing-and-features' %}
+        {% include dropdown.html description='Resources' category='resources' permalink='resources' %}
         <li>
           <a href="#">
             Case Studies
           </a>
         </li>
-        <li {% if page.url contains "/why-tds" %} class="active"{% endif %}>
-          <a href="{{ site.baseurl }}/why-tds.html">
-            Why TDS
-          </a>
-          <ul class="tdsvp-secondary-nav nav hide-dropdown">
-            {% for subcategories in site.categories.why-tds %}
-            <li role="presentation" {% if page.url contains {{subcategories.permalink}} %} class="active"{% endif %}>
-              <a href="{{site.baseurl}}/{{subcategories.permalink}}">{{subcategories.title}}</a>
-            </li>
-            {% endfor %}
-          </ul>
-        </li>
+        {% include dropdown.html description='Why TDS' category='why-tds' permalink='why-tds' %}
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
