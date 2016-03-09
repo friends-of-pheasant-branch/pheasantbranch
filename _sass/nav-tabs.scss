@@ -1,0 +1,18 @@
+// Tabs
+.tdsvp-tab {
+  .nav-tabs {
+    border-bottom: 1px solid $lines;
+  }
+  .nav-tabs>li>a {
+    color: $text;
+  }
+  .nav-tabs>li.active>a,
+  .nav-tabs>li.active>a:focus,
+  .nav-tabs>li.active>a:hover {
+    color: $tds-lt-blue;
+    cursor: default;
+    background-color: $white;
+    border: 1px solid transparent;
+    border-bottom-color: $tds-lt-blue;
+  }
+}
