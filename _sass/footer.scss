@@ -15,11 +15,13 @@
     }
   }
   p {
+    font-family: $copy;
     color: darken($lines, 15%);
     line-height: 1.6em;
     font-size: 11px;
   }
   a {
+    font-family: $copy;
     color: darken($lines, 15%);
     text-decoration: underline;
     &:hover {
