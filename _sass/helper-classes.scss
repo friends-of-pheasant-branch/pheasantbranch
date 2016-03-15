@@ -1,0 +1,13 @@
+.mobile-only {
+  display: block;
+  @include phones {
+    display: none;
+  }
+}
+
+.desktop-only {
+  display: none;
+  @include phones {
+    display: block;
+  }
+}
