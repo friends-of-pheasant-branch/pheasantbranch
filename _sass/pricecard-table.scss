@@ -3,6 +3,9 @@
   position: relative;
   z-index: 500;
   background: $white;
+  @include phones {
+    margin-bottom: 0px;
+  }
   tr:nth-child(3n+3) {
     background: #ededed;
   }
@@ -18,16 +21,16 @@
   }
   &.showcase-card {
     @include prefix(box-shadow, 2px 8px 10px #999);
-    border-bottom: 5px solid #ededed;
+    border-bottom: 0px solid transparent;
+    @include phones {
+      border-bottom: 5px solid #ededed;
+    }
     tr:nth-child(3n+1) {
       background: $orange;
       td {
         color: $white;
       }
     }
-  }
-  @include phones {
-    margin-bottom: 0px;
   }
   tr, td {
     border: none;

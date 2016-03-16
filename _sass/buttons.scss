@@ -13,3 +13,12 @@ button.tdsvp-btn.btn {
 .tdsvp-cta {
   padding: 12px 0;
 }
+
+.tdsvp-menu-chevron {
+  padding: 4px 0;
+  border-top: 1px solid darken($lines, 15%);
+  background: darken($lines, 7.5%);
+  span {
+    @include prefix(transition, 0.5s all ease);
+  }
+}

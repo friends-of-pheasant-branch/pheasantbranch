@@ -7,6 +7,9 @@
     var dropdown = $('ul.tdsvp-secondary-nav');
     var hideIt = ('hide-dropdown');
     var cloak = $('.cloak');
+    var chevron = $('.tdsvp-menu-chevron');
+    var spinner = $('.tdsvp-menu-chevron span');
+    var rotate = ('rotate-180')
     $(link).click(
       function() {
         $(dropdown).addClass(hideIt);
@@ -20,6 +23,10 @@
       function(){
         $(dropdown).addClass(hideIt);
         $(cloak).hide();
+    });
+    $(chevron).click(
+      function(){
+        $(this).find(spinner).toggleClass(rotate);
     });
   });
 </script>
