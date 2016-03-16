@@ -18,7 +18,7 @@
   }
   &.showcase-card {
     @include prefix(box-shadow, 2px 8px 10px #999);
-    border-bottom: 5px solid transparent;
+    border-bottom: 5px solid #ededed;
     tr:nth-child(3n+1) {
       background: $orange;
       td {
