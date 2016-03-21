@@ -5,14 +5,21 @@
   }
   .nav-tabs>li>a {
     color: $text;
+    &:hover {
+      background-color: $white;
+      border: 1px solid transparent;
+      color: darken($primary, 15%);
+      border-bottom-color: $lines;
+
+    }
   }
   .nav-tabs>li.active>a,
   .nav-tabs>li.active>a:focus,
   .nav-tabs>li.active>a:hover {
-    color: $tds-lt-blue;
+    color: $primary;
     cursor: default;
     background-color: $white;
     border: 1px solid transparent;
-    border-bottom-color: $tds-lt-blue;
+    border-bottom-color: $primary;
   }
 }
