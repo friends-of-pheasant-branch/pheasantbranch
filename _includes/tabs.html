@@ -1,17 +1,30 @@
 <div class="tdsvp-tab">
   <div>
     <!-- Nav tabs -->
-    <ul class="nav nav-tabs" role="tablist">
+    <!-- <ul class="nav nav-tabs" role="tablist">
       <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
       <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
       <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
       <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
+    </ul> -->
+    <ul class="nav nav-tabs" role="tablist">
+      {% for tabs in site.posts %}
+        {% if tabs.tab %}
+        <li role="presentation" class="{% if tabs.state == 'active' %}active{% endif %}">
+          <a href="#{{tabs.data}}" aria-controls="{{tabs.data}}" role="tab" data-toggle="tab">{{tabs.tabname}}</a>
+        </li>
+        {% endif %}
+      {% endfor %}
     </ul>
   </div>
 
+<!-- Tab panes -->
+  <div class="tab-content">
+    {% include tab-pane.html %}
+  </div>
 
   <!-- Tab panes -->
-  <div class="tab-content col-md-8">
+  <!-- <div class="tab-content">
     <div role="tabpanel" class="tab-pane fade in active" id="home">
       <h1>Content heading</h1>
       <p class="lead">
@@ -70,4 +83,4 @@
     <div role="tabpanel" class="tab-pane fade" id="messages">...</div>
     <div role="tabpanel" class="tab-pane fade" id="settings">...</div>
   </div>
-</div>
+</div> -->
