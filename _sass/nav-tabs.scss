@@ -1,10 +1,33 @@
 // Tabs
 .tdsvp-tab {
   .nav-tabs {
-    border-bottom: 1px solid $lines;
+    border-bottom: none;
+    text-align: center;
+    @include phones {
+      border-bottom: 1px solid $lines;
+    }
+  }
+  .nav>li {
+    display: inline-block;
+    float: none;
+    width: 42%;
+    border: 1px solid $lines;
+    &.active {
+      border: 1px solid $primary;
+      @include phones {
+        border: none;
+      }
+    }
+    @include phones {
+      border: none;
+      display: block;
+      float: left;
+      width: inherit;
+    }
   }
   .nav-tabs>li>a {
     color: $text;
+    border-radius: 0px;
     &:hover {
       background-color: $white;
       border: 1px solid transparent;
@@ -20,6 +43,8 @@
     cursor: default;
     background-color: $white;
     border: 1px solid transparent;
-    border-bottom-color: $primary;
+    @include phones {
+      border-bottom-color: $primary;
+    }
   }
 }

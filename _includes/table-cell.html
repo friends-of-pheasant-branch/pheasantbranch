@@ -1,0 +1,7 @@
+{% for cells in site.posts %}
+  {% if cells.table %}
+  <td>
+    {{ cells.cellData }}
+  </td>
+  {% endif %}
+{% endfor %}
