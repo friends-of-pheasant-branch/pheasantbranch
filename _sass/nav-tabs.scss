@@ -11,9 +11,9 @@
     display: inline-block;
     float: none;
     width: 42%;
-    border: 1px solid $lines;
+    border-bottom: 1px solid $lines;
     &.active {
-      border: 1px solid $primary;
+      border-bottom: 1px solid $primary;
       @include phones {
         border: none;
       }
