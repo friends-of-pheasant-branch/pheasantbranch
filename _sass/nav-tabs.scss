@@ -12,6 +12,7 @@
     float: none;
     width: 42%;
     border-bottom: 1px solid $lines;
+    padding: 8px;
     &.active {
       border-bottom: 1px solid $primary;
       @include phones {
@@ -23,6 +24,7 @@
       display: block;
       float: left;
       width: inherit;
+      padding: 0;
     }
   }
   .nav-tabs>li>a {
@@ -32,8 +34,10 @@
       background-color: $white;
       border: 1px solid transparent;
       color: darken($primary, 15%);
-      border-bottom-color: $lines;
-
+      border-bottom-color: transparent;
+      @include phones {
+        border-bottom-color: $lines;
+      }
     }
   }
   .nav-tabs>li.active>a,
