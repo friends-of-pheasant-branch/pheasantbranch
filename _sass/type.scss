@@ -8,12 +8,41 @@ h1, h2, h3, h4, h5, h6 {
 
 article {
   padding: 16px 0;
+  section {
+    padding: 12px 0;
+  }
   h1 {
     color: $primary;
     font-size: 28px;
+    &.explain {
+      padding-top: 24px;
+      color: $text;
+      font-size: 22px;
+    }
   }
   p {
     font-family: $copy;
-    font-size: 15px;
+    font-size: 16px;
+    &.tds-lt-blue {
+      color: darken($primary, 10%);
+    }
+  }
+  ul {
+    font-family: $copy;
+    font-size: 1.25em;;
+  }
+}
+
+.tdsvp-callout {
+  margin: 16px 0;
+  padding: 16px 0;
+  border-bottom: 1px solid $primary;
+  border-top: 1px solid $primary;
+  .lead {
+    font-size: 1.75em;
+  }
+  .lead::first-line {
+    font-size: 2.25em;
+    line-break: strict;
   }
 }
