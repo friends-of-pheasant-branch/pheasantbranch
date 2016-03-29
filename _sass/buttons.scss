@@ -5,6 +5,11 @@ a.tdsvp-btn.btn {
     background: $primary;
     border-color: $primary;
   }
+  &.btn-orange {
+    background: $orange;
+    border-color: $orange;
+    color: $white;
+  }
   &.btn-default {
     background: $white;
     border-color: $lines;
