@@ -12,6 +12,9 @@ button.tdsvp-btn.btn {
 
 .tdsvp-cta {
   padding: 12px 0;
+  &.pricecard {
+    padding: 12px 0 0 0;
+  }
 }
 
 .tdsvp-menu-chevron {
@@ -19,6 +22,7 @@ button.tdsvp-btn.btn {
   border-top: 1px solid darken($lines, 15%);
   background: darken($lines, 7.5%);
   span {
+    @include prefix(transform-origin, center center);
     @include prefix(transition, 0.5s all ease);
   }
 }

@@ -11,3 +11,8 @@ url: "http://este-tea.github.io/zealous" # the base hostname & protocol for your
 # Build settings
 markdown: kramdown
 permalink: pretty
+collections:
+  tables:
+    output: true
+  tabs: 
+    output: true

@@ -1,0 +1,19 @@
+- feature: This is feature number one.
+  array: ['yes', 'yes', 'yes']
+  row: hideit
+
+- feature: This is feature number two.
+  array: ['no', 'yes', 'yes']
+  row: hideit
+
+- feature: This is feature number three.
+  array: ['no', 'yes', 'no']
+  row: hideit
+
+- feature: This is feature number four.
+  array: ['yes', 'yes', 'yes']
+  row: hideit
+
+- feature: This is feature number five.
+  array: ['no', 'yes', 'no']
+  row: hideit

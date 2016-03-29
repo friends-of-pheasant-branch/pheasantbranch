@@ -1,7 +1,18 @@
 {% for cells in site.posts %}
   {% if cells.table %}
-  <td>
-    {{ cells.cellData }}
-  </td>
+  <tr class="hideit">
+    <td>
+      {{cells.content}}
+    </td>
+    <td>
+      {{ cells.cellData[0] }}
+    </td>
+    <td>
+      {{ cells.cellData[1] }}
+    </td>
+    <td>
+      {{ cells.cellData[2] }}
+    </td>
+  </tr>
   {% endif %}
 {% endfor %}

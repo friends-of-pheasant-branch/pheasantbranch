@@ -1,0 +1,7 @@
+{% for data in site.data.cell-data %}
+  {% if data.array[1] == "yes" %}
+  <li>
+    {{data.feature}}
+  </li>
+  {% endif %}
+{% endfor %}

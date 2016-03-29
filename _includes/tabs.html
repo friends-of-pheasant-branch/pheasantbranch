@@ -2,7 +2,7 @@
   <div>
     <!-- Nav tabs -->
     <ul class="nav nav-tabs" role="tablist">
-      {% for tabs in site.posts %}
+      {% for tabs in site.tabs %}
         {% if tabs.tab %}
         <li role="presentation" class="{% if tabs.state == 'active' %}active{% endif %}">
           <a href="#{{tabs.data}}" aria-controls="{{tabs.data}}" role="tab" data-toggle="tab">{{tabs.tabname}}</a>

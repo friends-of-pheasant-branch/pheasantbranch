@@ -1,0 +1,58 @@
+<tr>
+  {% comment %}
+   * The First table heading must be an empty space.
+  {% endcomment %}
+  <th>&nbsp;</th>
+  {% for data in site.data.pricecard %}
+  <th>
+    <table class="tdsvp-pricecard table {{ data.class }}">
+      <tr>
+        <td>
+          {{ data.package }}
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <h1 class="dollars">
+            {{ data.dollars }}
+            <sup>
+              <span class="cents">
+                {{ data.cents }}
+              </span>
+            </sup>
+          </h1>
+          <div class="tdsvp-cta">
+            <button class="tdsvp-btn btn btn-primary">
+              {{ data.cta }}
+            </button>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          {{ data.desc }}
+          <div class="mobile-only tdsvp-cta pricecard">
+            <div class="collapse" id="collapsePkg{{ data.pkg }}">
+              <ul class="tdsvp-ul">
+                {% if data.package == "Package 1" %}
+                  {% include pricecard-1-li.html %}
+                {% endif %}
+                {% if data.package == "Package 2" %}
+                  {% include pricecard-2-li.html %}
+                {% endif %}
+                {% if data.package == "Package 3" %}
+                  {% include pricecard-3-li.html %}
+                {% endif %}
+              </ul>
+            </div>
+            <div class="tdsvp-menu-chevron mobile-only" data-toggle="collapse" data-target="#collapsePkg{{ data.pkg }}" aria-expanded="false" aria-controls="collapsePkg{{ data.pkg }}">
+              <span class="glyphicon glyphicon-menu-down">
+              </span>
+            </div>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </th>
+  {% endfor %}
+</tr>

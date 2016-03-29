@@ -1,3 +1,16 @@
-<tr>
-  {% include table-cell.html %}
-</tr>
+{% for data in site.data.cell-data %}
+  <tr class="{{data.row}}">
+    <td>
+      {{data.feature}}
+    </td>
+    <td>
+      {{ data.array[0] | replace:'yes', '&#8226;' | replace:'no', '&nbsp;' }}
+    </td>
+    <td>
+      {{ data.array[1] | replace:'yes', '&#8226;' | replace:'no', '&nbsp;' }}
+    </td>
+    <td>
+      {{ data.array[2] | replace:'yes', '&#8226;' | replace:'no', '&nbsp;' }}
+    </td>
+  </tr>
+{% endfor %}
