@@ -1,22 +1,22 @@
 {% include nav-header.html %}
-<nav class="tdsvp-navbar navbar navbar-default">
+<nav class="fre-navbar navbar navbar-default">
   <div class="container-fluid">
     {% include navbar-header.html %}
     <!-- Brand and toggle get grouped for better mobile display -->
 
     <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="tds-voip-menu">
-      <ul class="nav navbar-nav" id="tds-voip-nav">
+    <div class="collapse navbar-collapse" id="fre-menu">
+      <ul class="nav navbar-nav" id="fre-nav">
         <li {% if page.url == "/" %} class="active"{% endif %}>
           <a href="{{ site.baseurl }}/">
             Home
             <span class="sr-only">(current)</span>
           </a>
         </li>
-        {% include dropdown.html description='managedIP Hosted' category='managedip-hosted' permalink='managedip-hosted' %}
-        {% include dropdown.html description='Resources' category='resources' permalink='resources' %}
+        {% include dropdown.html description='UI Components' category='ui-components' permalink='ui-components' %}
+        {% include dropdown.html description='Design' category='design' permalink='design' %}
         {% include list-item.html description='Case Studies' permalink='case-studies/case-studies' %}
-        {% include dropdown.html description='Why TDS' category='why-tds' permalink='why-tds' %}
+        {% include dropdown.html description='Angular' category='angular' permalink='angular' %}
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->

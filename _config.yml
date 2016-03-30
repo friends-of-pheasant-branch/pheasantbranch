@@ -1,12 +1,10 @@
 # Site settings
-title:                Zealous Landing Page Generator
-email:                your-email@domain.com
-description:          > # this means to ignore newlines until "baseurl:"
-                      A jekyll static site meant for generating quick page
-                      layouts to make landing pages in a quicker manner.
+title:                UI Components
+email:                michael@michaelfreiman.com
+description:          UI Components created by Michael Freiman
 
-baseurl: "/zealous" # the subpath of your site, e.g. /blog
-url: "http://este-tea.github.io/zealous" # the base hostname & protocol for your site
+baseurl: "/ui-components" # the subpath of your site, e.g. /blog
+url: "http://michaelfreiman.github.io/ui-components" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
@@ -14,5 +12,5 @@ permalink: pretty
 collections:
   tables:
     output: true
-  tabs: 
+  tabs:
     output: true

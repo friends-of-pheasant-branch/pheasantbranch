@@ -1,5 +1,5 @@
-button.tdsvp-btn.btn,
-a.tdsvp-btn.btn {
+button.fre-btn.btn,
+a.fre-btn.btn {
   border-radius: 0;
   &.btn-primary {
     background: $primary;
@@ -16,14 +16,14 @@ a.tdsvp-btn.btn {
   }
 }
 
-.tdsvp-cta {
+.fre-cta {
   padding: 12px 0;
   &.pricecard {
     padding: 12px 0 0 0;
   }
 }
 
-.tdsvp-menu-chevron {
+.fre-menu-chevron {
   padding: 4px 0;
   border-top: 1px solid darken($lines, 15%);
   background: darken($lines, 7.5%);

@@ -5,7 +5,7 @@
   <th>&nbsp;</th>
   {% for data in site.data.pricecard %}
   <th>
-    <table class="tdsvp-pricecard table {{ data.class }}">
+    <table class="fre-pricecard table {{ data.class }}">
       <tr>
         <td>
           {{ data.package }}
@@ -21,8 +21,8 @@
               </span>
             </sup>
           </h1>
-          <div class="tdsvp-cta">
-            <button class="tdsvp-btn btn btn-primary">
+          <div class="fre-cta">
+            <button class="fre-btn btn btn-primary">
               {{ data.cta }}
             </button>
           </div>
@@ -31,9 +31,9 @@
       <tr>
         <td>
           {{ data.desc }}
-          <div class="mobile-only tdsvp-cta pricecard">
+          <div class="mobile-only fre-cta pricecard">
             <div class="collapse" id="collapsePkg{{ data.pkg }}">
-              <ul class="tdsvp-ul">
+              <ul class="fre-ul">
                 {% if data.package == "Package 1" %}
                   {% include pricecard-1-li.html %}
                 {% endif %}
@@ -45,7 +45,7 @@
                 {% endif %}
               </ul>
             </div>
-            <div class="tdsvp-menu-chevron mobile-only" data-toggle="collapse" data-target="#collapsePkg{{ data.pkg }}" aria-expanded="false" aria-controls="collapsePkg{{ data.pkg }}">
+            <div class="fre-menu-chevron mobile-only" data-toggle="collapse" data-target="#collapsePkg{{ data.pkg }}" aria-expanded="false" aria-controls="collapsePkg{{ data.pkg }}">
               <span class="glyphicon glyphicon-menu-down">
               </span>
             </div>

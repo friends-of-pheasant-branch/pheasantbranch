@@ -1,5 +1,5 @@
-<li data-description="{{include.description}}" class='tdsvp-dropover {% if page.url contains include.permalink %}active{% endif %}'>
-  <ul class="tdsvp-secondary-nav nav hide-dropdown">
+<li data-description="{{include.description}}" class='fre-dropover {% if page.url contains include.permalink %}active{% endif %}'>
+  <ul class="fre-secondary-nav nav hide-dropdown">
     {% for subcategories in site.posts %}
       {% if subcategories.category == include.category %}
       <li role="presentation" {% if page.url contains {{subcategories.permalink}} %} class="active"{% endif %}>

@@ -4,7 +4,7 @@
   border-bottom: 4px solid $primary;
 }
 
-.tdsvp-dropover:before {
+.fre-dropover:before {
   display: none;
   @include phones {
     display: block;
@@ -16,7 +16,7 @@
     color: lighten($text, 7.5%);
   }
 }
-.tdsvp-dropover.active:before {
+.fre-dropover.active:before {
   border-top: 2px solid $primary;
   margin-top: -2px;
   background: $white;
@@ -24,7 +24,7 @@
 
 }
 // Navbar
-.tdsvp-navbar.navbar {
+.fre-navbar.navbar {
   position: relative;
   z-index: 900;
   min-height: 34px;
@@ -42,8 +42,15 @@
     border: 1px solid $lines;
     .navbar-toggle {
       border-radius: 0px;
-      border: 1px solid $lines;
+      border: none;
       padding: 8px 10px;
+      color: $primary;
+      &:hover,
+      &:active,
+      &:visited,
+      &:focus {
+        background: transparent;
+      }
     }
   }
   &.navbar-default .navbar-nav>.active {

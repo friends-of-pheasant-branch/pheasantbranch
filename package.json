@@ -1,24 +1,24 @@
 {
-  "name": "zealous",
+  "name": "ui-components",
   "version": "1.0.0",
-  "description": "Landing page generator for mail outs",
+  "description": "UI Components created by Michael Freiman",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/este-tea/zealous.git"
+    "url": "https://github.com/michaelfreiman/ui-components.git"
   },
   "keywords": [
     "npm",
-    "landing-page",
-    "generator"
+    "ui-components",
+    "design"
   ],
-  "author": "Tom Ray",
+  "author": "Michael Freiman",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/este-tea/zealous/issues"
+    "url": "https://github.com/michaelfreiman/ui-components/issues"
   },
-  "homepage": "https://github.com/este-tea/zealous"
+  "homepage": "https://github.com/michaelfreiman/ui-components"
 }

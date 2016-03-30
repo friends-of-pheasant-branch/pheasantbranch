@@ -1,5 +1,5 @@
 // Colors
-$primary: #04acfa;
+$primary: #b565a7;
 $card-shadow: darken($primary, 10%);
 $tds-dk-blue: #19388a;
 $tds-lt-blue: #258ecd;
@@ -10,4 +10,6 @@ $orange: #ff7700;
 $lines: #ededed;
 
 // Fonts
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300);
+$roboto: 'Roboto', sans-serif;
 $copy: "Helvetica Neue",Helvetica,Arial,sans-serif;

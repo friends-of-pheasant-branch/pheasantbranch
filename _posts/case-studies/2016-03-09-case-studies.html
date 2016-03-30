@@ -2,9 +2,6 @@
 layout: base
 title: Case Studies
 permalink: case-studies/case-studies
-header: image
-image: blue-banner.jpg
-imageAlt: A photo of a blue banner
 ---
 <article>
   <h1>{{page.title}}</h1>
@@ -13,6 +10,23 @@ imageAlt: A photo of a blue banner
   </p>
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, sint ad! Iste mollitia totam voluptatum alias. Molestiae autem at, eius nulla aliquam minima exercitationem illum magnam in. Doloremque, alias, quae.</p>
   <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+  <h1>Jekyll - Liquid</h1>
+  {% highlight liquid linenos %}
+    {% raw %}
+    <li data-description="{{include.description}}" class='fre-dropover {% if page.url contains include.permalink %}active{% endif %}'>
+      <ul class="fre-secondary-nav nav hide-dropdown">
+        {% for subcategories in site.posts %}
+          {% if subcategories.category == include.category %}
+          <li role="presentation" {% if page.url contains {{subcategories.permalink}} %} class="active"{% endif %}>
+            <a href="{{site.baseurl}}/{{subcategories.permalink}}">{{subcategories.title}}</a>
+          </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </li>
+    {% endraw %}
+  {% endhighlight %}
+
 </article>
 
 {% include blockquote.html quote='This is the very best thing in the entire world. It is even better than my truck. I cannot live without it.' person='Jethro Fortworth' location='Chicago, Illinois' %}
