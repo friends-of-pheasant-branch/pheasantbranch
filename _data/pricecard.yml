@@ -2,7 +2,7 @@
   package: Package 1
   dollars: 69
   cents: 99
-  cta: Get A Quote
+  cta: Buy Now
   desc: Standard
   pkg: 1
 
@@ -10,7 +10,7 @@
   package: Package 2
   dollars: 349
   cents: 99
-  cta: Get A Quote
+  cta: Buy Now
   desc: Premium
   pkg: 2
 
@@ -18,6 +18,6 @@
   package: Package 3
   dollars: 89
   cents: 99
-  cta: Get A Quote
+  cta: Buy Now
   desc: Pro
   pkg: 3
