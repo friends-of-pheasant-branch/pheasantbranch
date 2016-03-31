@@ -4,7 +4,7 @@ email:                michael@michaelfreiman.com
 description:          UI Components created by Michael Freiman
 
 baseurl: "/ui-components" # the subpath of your site, e.g. /blog
-url: "http://freiman.org/ui-components" # the base hostname & protocol for your site
+url: "http://michaelfreiman.github.io/ui-components" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
