@@ -27,42 +27,6 @@ category: ui-components
         <p class="lead">
           Here are code examples using Jekyll's Liquid Templates
         </p>
-        <div>
-          {% highlight liquid %}
-            {% raw %}
-            file: _includes/tables.html
-
-            <table class="fre-table table">
-              {% include pricecard.html %}
-              {% include table-row.html %}
-            </table>
-            {% endraw %}
-          {% endhighlight %}
-        </div>
-        <div>
-        {% highlight liquid %}
-          {% raw %}
-          file: _includes/table-row.html
-
-          {% for data in site.data.cell-data %}
-            <tr class="{{data.row}}">
-              <td>
-                {{data.feature}}
-              </td>
-              <td>
-                {{ data.array[0] | replace:'yes', '&#8226;' | replace:'no', '&nbsp;' }}
-              </td>
-              <td>
-                {{ data.array[1] | replace:'yes', '&#8226;' | replace:'no', '&nbsp;' }}
-              </td>
-              <td>
-                {{ data.array[2] | replace:'yes', '&#8226;' | replace:'no', '&nbsp;' }}
-              </td>
-            </tr>
-          {% endfor %}
-          {% endraw %}
-        {% endhighlight %}
-        </div>
       </section>
     </article>
   </div>
