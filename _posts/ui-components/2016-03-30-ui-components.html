@@ -1,7 +1,7 @@
 ---
 layout: full
 title: UI Components
-permalink: ui-components/ui-components
+permalink: ui-components
 category: ui-components
 ---
 <div class="row">
@@ -27,16 +27,19 @@ category: ui-components
         <p class="lead">
           Here are code examples using Jekyll's Liquid Templates
         </p>
-        {% highlight liquid %}
-          {% raw %}
-          file: _includes/tables.html
+        <div>
+          {% highlight liquid %}
+            {% raw %}
+            file: _includes/tables.html
 
-          <table class="fre-table table">
-            {% include pricecard.html %}
-            {% include table-row.html %}
-          </table>
-          {% endraw %}
-        {% endhighlight %}
+            <table class="fre-table table">
+              {% include pricecard.html %}
+              {% include table-row.html %}
+            </table>
+            {% endraw %}
+          {% endhighlight %}
+        </div>
+        <div>
         {% highlight liquid %}
           {% raw %}
           file: _includes/table-row.html
@@ -59,9 +62,11 @@ category: ui-components
           {% endfor %}
           {% endraw %}
         {% endhighlight %}
+        </div>
         <p class="lead">
           And here is the sass.
         </p>
+        <div>
         {% highlight sass %}
         file: _sass/pricecard-table.scss
 
@@ -113,8 +118,8 @@ category: ui-components
             }
           }
         }
-
         {% endhighlight %}
+        </div>
       </section>
     </article>
   </div>
