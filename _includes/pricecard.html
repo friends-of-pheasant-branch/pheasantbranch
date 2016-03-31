@@ -3,49 +3,49 @@
    * The First table heading must be an empty space.
   {% endcomment %}
   <th>&nbsp;</th>
-  {% for data in site.data.pricecard %}
+  {% for pricecard in site.data.pricecards %}
   <th>
-    <table class="fre-pricecard table {{ data.class }}">
+    <table class="fre-pricecard table {{ pricecard.class }}">
       <tr>
         <td>
-          {{ data.package }}
+          {{ pricecard.package }}
         </td>
       </tr>
       <tr>
         <td>
           <h1 class="dollars">
-            {{ data.dollars }}
+            {{ pricecard.dollars }}
             <sup>
               <span class="cents">
-                {{ data.cents }}
+                {{ pricecard.cents }}
               </span>
             </sup>
           </h1>
           <div class="fre-cta">
             <button class="fre-btn btn btn-primary">
-              {{ data.cta }}
+              {{ pricecard.cta }}
             </button>
           </div>
         </td>
       </tr>
       <tr>
         <td>
-          {{ data.desc }}
+          {{ pricecard.desc }}
           <div class="mobile-only fre-cta pricecard">
-            <div class="collapse" id="collapsePkg{{ data.pkg }}">
+            <div class="collapse" id="collapsePkg{{ pricecard.pkg }}">
               <ul class="fre-ul">
-                {% if data.package == "Package 1" %}
+                {% if pricecard.package == "Package 1" %}
                   {% include pricecard-1-li.html %}
                 {% endif %}
-                {% if data.package == "Package 2" %}
+                {% if pricecard.package == "Package 2" %}
                   {% include pricecard-2-li.html %}
                 {% endif %}
-                {% if data.package == "Package 3" %}
+                {% if pricecard.package == "Package 3" %}
                   {% include pricecard-3-li.html %}
                 {% endif %}
               </ul>
             </div>
-            <div class="fre-menu-chevron mobile-only" data-toggle="collapse" data-target="#collapsePkg{{ data.pkg }}" aria-expanded="false" aria-controls="collapsePkg{{ data.pkg }}">
+            <div class="fre-menu-chevron mobile-only" data-toggle="collapse" data-target="#collapsePkg{{ pricecard.pkg }}" aria-expanded="false" aria-controls="collapsePkg{{ pricecard.pkg }}">
               <span class="glyphicon glyphicon-menu-down">
               </span>
             </div>

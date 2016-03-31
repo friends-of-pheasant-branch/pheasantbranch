@@ -1,7 +1,7 @@
-{% for data in site.data.cell-data %}
-  {% if data.array[0] == "yes" %}
+{% for feature in site.data.features %}
+  {% if feature.included[0] == "yes" %}
   <li>
-    {{data.feature}}
+    {{feature.description}}
   </li>
   {% endif %}
 {% endfor %}

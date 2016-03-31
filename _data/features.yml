@@ -1,0 +1,14 @@
+- description: Allows user to login.
+  included: ['yes', 'yes', 'yes']
+
+- description: Unlimited quinoa storage.
+  included: ['no', 'yes', 'yes']
+
+- description: This is feature number three.
+  included: ['no', 'yes', 'no']
+
+- description: Goes well with coffee.
+  included: ['yes', 'yes', 'yes']
+
+- description: Delivers high performance bran muffins.
+  included: ['no', 'yes', 'no']

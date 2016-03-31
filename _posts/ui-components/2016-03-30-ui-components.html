@@ -29,19 +29,19 @@ category: ui-components
         </p>
         {% highlight liquid linenos %}
           {% raw %}
-            {% for data in site.data.cell-data %}
-              <tr class="{{data.row}}">
+            {% for feature in site.data.features %}
+              <tr class="hideit">
                 <td>
-                  {{data.feature}}
+                  {{feature.description}}
                 </td>
                 <td>
-                  {{ data.array[0] | replace:'yes', '&#8226;' | replace:'no', '&nbsp;' }}
+                  {{ feature.included[0] | replace:'yes', '&#8226;' | replace:'no', '&nbsp;' }}
                 </td>
                 <td>
-                  {{ data.array[1] | replace:'yes', '&#8226;' | replace:'no', '&nbsp;' }}
+                  {{ feature.included[1] | replace:'yes', '&#8226;' | replace:'no', '&nbsp;' }}
                 </td>
                 <td>
-                  {{ data.array[2] | replace:'yes', '&#8226;' | replace:'no', '&nbsp;' }}
+                  {{ feature.included[2] | replace:'yes', '&#8226;' | replace:'no', '&nbsp;' }}
                 </td>
               </tr>
             {% endfor %}
