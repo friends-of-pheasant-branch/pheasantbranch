@@ -1,19 +1,19 @@
-- feature: This is feature number one.
+- feature: Allows user to login.
   array: ['yes', 'yes', 'yes']
   row: hideit
 
-- feature: This is feature number two.
+- feature: Enhanced infrastructure mainframe paintings.
   array: ['no', 'yes', 'yes']
   row: hideit
 
-- feature: This is feature number three.
+- feature: Includes 25TB of storage; cloud, or garage.
   array: ['no', 'yes', 'no']
   row: hideit
 
-- feature: This is feature number four.
+- feature: Makes toast and coffee.
   array: ['yes', 'yes', 'yes']
   row: hideit
 
-- feature: This is feature number five.
+- feature: Delivers high performance theatre.
   array: ['no', 'yes', 'no']
   row: hideit
