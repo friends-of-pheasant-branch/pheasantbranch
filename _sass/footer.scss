@@ -1,5 +1,5 @@
 .footer {
-  background: #555;
+  background: lighten($earth, 5%);
   border-top: 3px solid $primary;
   padding: 36px 0;
   .container {
@@ -30,6 +30,6 @@
   }
 }
 .footer-ground {
-  background: #353535;
+  background: $earth;
   padding: 24px 0;
 }
