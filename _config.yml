@@ -1,10 +1,10 @@
 # Site settings
-title:                UI Components
+title:                Friends of Pheasant Branch Conservancy
 email:                michael@michaelfreiman.com
 description:          UI Components created by Michael Freiman
 
-baseurl: "/ui-components" # the subpath of your site, e.g. /blog
-url: "http://michaelfreiman.github.io/ui-components" # the base hostname & protocol for your site
+baseurl: "/pheasantbranch" # the subpath of your site, e.g. /blog
+url: "http://friends-of-pheasant-branch.github.io/pheasantbranch" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
