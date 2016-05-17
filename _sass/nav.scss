@@ -1,7 +1,7 @@
 .top-bar {
   height: 6px;
-  background: $earth;
-  border-bottom: 4px solid $primary;
+  background: $primary;
+  border-bottom: 4px solid lighten($primary, 20%);
 }
 
 .fre-dropover:before {
