@@ -2,12 +2,22 @@ button.fre-btn.btn,
 a.fre-btn.btn {
   border-radius: 0;
   &.btn-primary {
-    background: $blue;
-    border-color: $blue;
+    background: $primary;
+    border-color: $primary;
   }
   &.btn-orange {
     background: $orange;
     border-color: $orange;
+    color: $white;
+  }
+  &.btn-blue {
+    background: $blue;
+    border-color: $blue;
+    color: $white;
+  }
+  &.btn-rose {
+    background: $rose;
+    border-color: $rose;
     color: $white;
   }
   &.btn-default {
