@@ -1,7 +1,7 @@
 // Navbar Header
 .fre-nav-header {
   padding: 12px 0 16px 0;
-  border-bottom: 1px solid $lines;
+  border-bottom: 1px solid darken($sand, 20%);
   display: none;
   @include phones {
     display: block;
@@ -26,7 +26,7 @@
       }
     }
     a {
-      color: #777;
+      color: $text;
     }
   }
 }

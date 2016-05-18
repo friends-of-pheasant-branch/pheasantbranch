@@ -19,7 +19,7 @@
 .fre-dropover.active:before {
   border-top: 2px solid $primary;
   margin-top: -2px;
-  background: $white;
+  background: $sand;
   color: $primary;
 
 }
@@ -30,15 +30,15 @@
   min-height: 34px;
   border: none;
   border-radius: 0px;
-  background: $white;
+  background: $sand;
   margin-bottom: 0px;
   @include phones {
-    background: darken($white, 2.5%);
+    background: darken($sand, 3.5%);
     margin-bottom: 16px;
   }
   // mobile only
   .navbar-header {
-    background: $white;
+    background: $sand;
     border: 1px solid $lines;
     .navbar-toggle {
       border-radius: 0px;
@@ -57,7 +57,7 @@
     >a,
     >a:focus,
     >a:hover {
-      background-color: $white;
+      background-color: $sand;
       color: $primary;
       border-top: 2px solid $primary;
       @include phones {
@@ -77,7 +77,7 @@
       bottom: -1px;
       left: 1px;
       right: 1px;
-      background: $white;
+      background: $sand;
     }
   }
   li>a {
