@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+  <body>
+    <div class="cloak"></div>
+    <div class="top-bar"></div>
+    {% include nav.html %}
+    <div class="container">
+      {% if page.header %}
+      {% include header.html %}
+      {% endif %}
+      {{ content }}
+    </div>
+    {% include footer.html %}
+    {% include scripts.html %}
+  </body>
+</html>

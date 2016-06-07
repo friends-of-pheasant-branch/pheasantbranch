@@ -2,6 +2,9 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  &.fre-cards {
+    padding: 24px 0;
+  }
 }
 
 .card {
