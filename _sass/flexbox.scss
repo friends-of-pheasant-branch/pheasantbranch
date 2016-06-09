@@ -1,87 +1,93 @@
-.cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  &.fre-cards {
-    padding: 24px 0;
-  }
-}
-
-.card {
-  $base-border-color: gainsboro !default;
+.flex-boxes {
   $base-border-radius: 3px !default;
   $base-background-color: white !default;
-  $base-spacing: 1.5em !default;
-  $action-color: #477DCA !default;
   $dark-gray: #333 !default;
-  $base-font-color: $dark-gray !default;
-  $card-border-color: $base-border-color;
-  $card-border: 1px solid $card-border-color;
-  $card-background: lighten($card-border-color, 10%);
-  $card-header-background: $card-background;
-  $card-margin: 1em;
-  $card-image-hover-opacity: 0.7;
-  $card-image-hover-color: #F8F2B4;
+  $light-gray: #DDD !default;
+  $base-font-color: $dark-gray;
+  $flex-box-border-color: $light-gray;
+  $flex-box-border: 1px solid $flex-box-border-color;
+  $flex-box-background: lighten($light-gray, 10%);
+  $flex-box-gutter: 0.4em;
+  $flex-box-width: 18em;
+  $flex-box-color: transparentize($base-font-color, 0.3);
+  $flex-box-top-colors:
+    $green,
+    $dk-orange,
+    $sky;
 
-  background-color: $card-background;
-  border: $card-border;
-  border-radius: $base-border-radius;
-  box-shadow: 0 2px 4px darken($base-background-color, 10%);
-  cursor: pointer;
-  flex-basis: 15em;
-  flex-grow: 1;
-  margin: 0 $card-margin $base-spacing $card-margin;
-  position: relative;
-  transition: all 0.2s ease-in-out;
+  @include clearfix;
+  align-items: stretch;
+  clear: both;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
 
-  .card-image {
-    background-color: $card-image-hover-color;
-    height: 150px;
-    max-height: 150px;
-    overflow: hidden;
+  .flex-box {
+    align-self: stretch;
+    background: $flex-box-background;
+    border-radius: $base-border-radius;
+    box-shadow: inset 0 0 1px $flex-box-border-color, 0 2px 4px darken($base-background-color, 10%);
+    display: block;
+    flex: 2 2 15em;
+    margin: $flex-box-gutter;
+    padding: 2em 2em 3em 2em;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+    &.flex-box-green {
+      background: $green;
+      color: $white;
+    }
+    &.flex-box-orange {
+      background: $dk-orange;
+      color: $white;
+    }
+    &.flex-box-sky {
+      background: $sky;
+      color: $white;
+    }
+    @for $i from 1 to 4 { // assign colors from $flex-box-top-colors list
+      &:nth-child(#{$i}) {
+        $color-from-list: nth($flex-box-top-colors, $i);
+        border-top: 6px solid $color-from-list;
+
+        &:focus,
+        &:hover {
+          background-color: transparentize($color-from-list, 0.2);
+        }
+      }
+    }
 
     img {
-      @include border-top-radius($base-border-radius);
-      opacity: 1;
-      transition: all 0.2s ease-in-out;
-      width: 100%;
+      display: block;
+      height: 3em;
+      margin: 0 auto 1em;
+      opacity: 0.4;
     }
-  }
 
-  .card-header {
-    background-color: $card-header-background;
-    border-bottom: $card-border;
-    border-radius: $base-border-radius $base-border-radius 0 0;
-    font-weight: bold;
-    line-height: 1.5em;
-    padding: ($base-spacing / 3) ($base-spacing / 2);
-    transition: all 0.2s ease-in-out;
-  }
-
-  .card-copy {
-    font-size: 0.9em;
-    line-height: 1.5em;
-    padding: ($base-spacing / 2) ($base-spacing / 2);
+    .flex-title {
+      color: $flex-box-color;
+      font-size: 1.2em;
+      margin-bottom: 0.5em;
+      &.flex-title-white {
+        color: $white;
+        font-size: 1.75em;
+      }
+    }
 
     p {
-      margin: 0 0 ($base-spacing / 2);
+      color: transparentize($flex-box-color, 0.1);
+      line-height: 1.5em;
+      margin: auto;
+      &.flex-p-white {
+        color: $white;
+        font-size: 16px;
+        line-height: 1.3em;
+      }
     }
   }
 
-  &:focus,
-  &:hover {
-    cursor: pointer;
-
-    img {
-      opacity: $card-image-hover-opacity;
-    }
-  }
-
-  &:active {
-    background-color: $card-background;
-
-    .card-header {
-      background-color: $card-background;
-    }
+  .flex-box-big {
+    flex: 1 1 40em;
   }
 }
