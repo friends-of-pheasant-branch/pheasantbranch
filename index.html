@@ -2,75 +2,50 @@
 layout: page
 header: carousel
 ---
-<div class="fre-cards cards">
-  <div class="card">
-    <div class="card-image">
-      <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png" alt="">
-    </div>
-    <div class="card-header">
-      Restore
-    </div>
-    <div class="card-copy">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, officiis sunt neque facilis culpa molestiae necessitatibus delectus veniam provident.</p>
-    </div>
-  </div>
-
-  <div class="card">
-    <div class="card-image">
-      <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains-4.png" alt="">
-    </div>
-    <div class="card-header">
-      Protect
-    </div>
-    <div class="card-copy">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, officiis sunt neque facilis culpa molestiae necessitatibus delectus veniam provident.</p>
-    </div>
-  </div>
-
-  <div class="card">
-    <div class="card-image">
-      <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains-3.png" alt="">
-    </div>
-    <div class="card-header">
-      Promote
-    </div>
-    <div class="card-copy">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-    </div>
-  </div>
-</div>
 <div class="flex-boxes">
   <a href="javascript:void(0)" class="flex-box flex-box-green">
-    <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_square.png" alt="">
+    <img src="{{site.baseurl}}/public/img/restore.png"alt="">
     <h1 class="flex-title flex-title-white">Restore</h1>
     <p class="flex-p-white">Lorem adipisicing elit. Voluptas consectetur tempora quis nam, officia tenetur blanditiis in illo dolor?</p>
   </a>
-  <a href="javascript:void(0)" class="flex-box flex-box-orange">
-    <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_square.png" alt="">
+  <a href="javascript:void(0)" class="flex-box flex-box-rose">
+    <img src="{{site.baseurl}}/public/img/protect.png" alt="">
     <h1 class="flex-title flex-title-white">Protect</h1>
     <p class="flex-p-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo obcaecati in provident illo.</p>
   </a>
   <a href="javascript:void(0)" class="flex-box flex-box-sky">
-    <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_square.png" alt="">
+    <img src="{{site.baseurl}}/public/img/promote.png" alt="">
     <h1 class="flex-title flex-title-white">Promote</h1>
     <p class="flex-p-white">Lorem ipsum dolor sit amet, elit. Rem, illum.</p>
   </a>
 </div>
-<div class="flex-boxes">
-  <a href="javascript:void(0)" class="flex-box flex-box-big">
-    <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_square.png" alt="">
-    <h1 class="flex-title">A Wide Flex Box Item</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad nostrum, libero! Laborum distinctio necessitatibus voluptates eaque officiis, unde illo, earum voluptatum rerum, reiciendis ipsa ex dolorem a dicta, maxime aliquam.</p>
-  </a>
-  <a href="javascript:void(0)" class="flex-box">
-    <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_square.png" alt="">
-    <h1 class="flex-title">Flex Box Item</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum molestiae fugiat tenetur fugit atque dignissimos, fugiat natus vitae.</p>
-  </a>
+<div class="cards">
+  <div class="card">
+    <div class="card-image">
+      <img src="{{site.baseurl}}/public/img/member.png" class="img-responsive" alt="">
+    </div>
+    <div class="card-header">
+      Donate
+    </div>
+    <div class="card-copy">
+      {% include blockquote.html quote='I love the Pheasant Branch Conservancy and am proud to be a member of this great community.' person='Henry David Thoreau' location='Middleton, WI'%}
+      <p>
+        <button class="fre-btn btn btn-orange btn-lg">
+          Become A Member
+        </button>
+      </p>
+    </div>
+  </div>
 </div>
 
+<!-- <a href="javascript:void(0)" class="flex-box">
+<img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_square.png" alt="">
+<h1 class="flex-title">Flex Box Item</h1>
+<iframe src="https://calendar.google.com/calendar/htmlembed?src=%23contacts%40group.v.calendar.google.com&ctz=America/Chicago" style="border: 0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum molestiae fugiat tenetur fugit atque dignissimos, fugiat natus vitae.</p>
+</a> -->
+
 <div class="col-md-6">
-  <iframe src="https://calendar.google.com/calendar/htmlembed?src=%23contacts%40group.v.calendar.google.com&ctz=America/Chicago" style="border: 0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
 
 </div>
 <div class="col-md-6"></div>

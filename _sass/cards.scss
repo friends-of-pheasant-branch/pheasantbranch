@@ -52,15 +52,15 @@
     background-color: $card-header-background;
     border-bottom: $card-border;
     border-radius: $base-border-radius $base-border-radius 0 0;
-    font-weight: bold;
+    font-size: 1.75em;
     line-height: 1.5em;
     padding: ($base-spacing / 3) ($base-spacing / 2);
     transition: all 0.2s ease-in-out;
   }
 
   .card-copy {
-    font-size: 0.9em;
-    line-height: 1.5em;
+    font-size: 14px;
+    line-height: 1.3em;
     padding: ($base-spacing / 2) ($base-spacing / 2);
 
     p {

@@ -12,7 +12,7 @@
   $flex-box-color: transparentize($base-font-color, 0.3);
   $flex-box-top-colors:
     $green,
-    $dk-orange,
+    $rose,
     $sky;
 
   @include clearfix;
@@ -38,8 +38,8 @@
       background: $green;
       color: $white;
     }
-    &.flex-box-orange {
-      background: $dk-orange;
+    &.flex-box-rose {
+      background: $rose;
       color: $white;
     }
     &.flex-box-sky {
