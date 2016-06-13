@@ -30,12 +30,12 @@
   cursor: pointer;
   flex-basis: 15em;
   flex-grow: 1;
-  margin: 0 $card-margin $base-spacing $card-margin;
+  //margin: 0 $card-margin $base-spacing $card-margin;
   position: relative;
   transition: all 0.2s ease-in-out;
 
   .card-image {
-    background-color: $card-image-hover-color;
+    background-color: $card-header-background;
     height: 150px;
     max-height: 150px;
     overflow: hidden;

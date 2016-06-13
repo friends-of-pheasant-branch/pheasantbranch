@@ -2,41 +2,66 @@
 layout: page
 header: carousel
 ---
-<div class="flex-boxes">
-  <a href="javascript:void(0)" class="flex-box flex-box-green">
-    <img src="{{site.baseurl}}/public/img/restore.png"alt="">
-    <h1 class="flex-title flex-title-white">Restore</h1>
-    <p class="flex-p-white">Lorem adipisicing elit. Voluptas consectetur tempora quis nam, officia tenetur blanditiis in illo dolor?</p>
-  </a>
-  <a href="javascript:void(0)" class="flex-box flex-box-rose">
-    <img src="{{site.baseurl}}/public/img/protect.png" alt="">
-    <h1 class="flex-title flex-title-white">Protect</h1>
-    <p class="flex-p-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo obcaecati in provident illo.</p>
-  </a>
-  <a href="javascript:void(0)" class="flex-box flex-box-sky">
-    <img src="{{site.baseurl}}/public/img/promote.png" alt="">
-    <h1 class="flex-title flex-title-white">Promote</h1>
-    <p class="flex-p-white">Lorem ipsum dolor sit amet, elit. Rem, illum.</p>
-  </a>
-</div>
-<div class="cards">
-  <div class="card">
-    <div class="card-image">
-      <img src="{{site.baseurl}}/public/img/member.png" class="img-responsive" alt="">
-    </div>
-    <div class="card-header">
-      Donate
-    </div>
-    <div class="card-copy">
-      {% include blockquote.html quote='I love the Pheasant Branch Conservancy and am proud to be a member of this great community.' person='Henry David Thoreau' location='Middleton, WI'%}
-      <p>
-        <button class="fre-btn btn btn-orange btn-lg">
-          Become A Member
-        </button>
+<article>
+  <section>
+    <div class="fre-callout">
+      <p class="lead">
+        Welcome,<br> Friends of the Pheasant Branch Conservancy.
       </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem nisi voluptas fugit magni, labore officiis nobis distinctio quae.
+      </p>
+      <button type="button" class="fre-btn btn btn-lg btn-primary">I would like to become a Friend</button>
+      <button type="button" class="fre-btn btn btn-lg btn-orange">I would like to Donate</button>
     </div>
-  </div>
-</div>
+  </section>
+  <section class="hr">
+    <h1>
+      Become Involved
+    </h1>
+    <div class="flex-boxes">
+      <a href="javascript:void(0)" class="flex-box flex-box-green">
+        <img src="{{site.baseurl}}/public/img/restore.png"alt="">
+        <h1 class="flex-title flex-title-white">Restore</h1>
+        <p class="flex-p-white">Lorem adipisicing elit. Voluptas consectetur tempora quis nam, officia tenetur blanditiis in illo dolor?</p>
+      </a>
+      <a href="javascript:void(0)" class="flex-box flex-box-rose">
+        <img src="{{site.baseurl}}/public/img/protect.png" alt="">
+        <h1 class="flex-title flex-title-white">Protect</h1>
+        <p class="flex-p-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo obcaecati in provident illo.</p>
+      </a>
+      <a href="javascript:void(0)" class="flex-box flex-box-sky">
+        <img src="{{site.baseurl}}/public/img/promote.png" alt="">
+        <h1 class="flex-title flex-title-white">Promote</h1>
+        <p class="flex-p-white">Lorem ipsum dolor sit amet, elit. Rem, illum.</p>
+      </a>
+    </div>
+  </section>
+  <section class="hr">
+    <h1>
+      Join the Community
+    </h1>
+    <div class="cards">
+      <div class="card">
+        <div class="card-image">
+          <img src="{{site.baseurl}}/public/img/member.png" alt="Friends of the Pheasant Branch Conservancy">
+        </div>
+        <div class="card-header">
+          Join Us
+        </div>
+        <div class="card-copy">
+          {% include blockquote.html quote='I love the Pheasant Branch Conservancy and am proud to be a member of this great community.' person='Henry David Thoreau' location='Middleton, WI'%}
+          <p>
+            <button class="fre-btn btn btn-primary btn-lg">
+              Join Our Community
+            </button>
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </section>
+</article>
 
 <!-- <a href="javascript:void(0)" class="flex-box">
 <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_square.png" alt="">
