@@ -1,6 +1,6 @@
 .logo-wrap {
-  width: 98px;
-  height: 40px;
+  width: 128px;
+  height: auto;
   .fre-navbar .navbar-header & {
     display: block !important;
     width: 80px;
@@ -16,7 +16,22 @@
   width: 200%;
   margin-left: -50%;
   position: relative;
-  height: auto;
+  height: 380px;
+  overflow: hidden;
+  white-space: nowrap;
+  img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -moz-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: auto;
+    height: auto;
+    min-height: 380px;
+  }
   @include phones {
     width: 150%;
     margin-left: -25%;
@@ -28,7 +43,7 @@
 }
 .item {
   width: 100%;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .video-wrap {

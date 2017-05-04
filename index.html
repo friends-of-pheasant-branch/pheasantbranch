@@ -1,18 +1,17 @@
 ---
-layout: page
+layout: default
 header: carousel
 ---
+
 <article>
   <section>
     <div class="fre-callout">
       <p class="lead">
-        Welcome,<br> Friends of the Pheasant Branch Conservancy.
+        Our Mission:<br>To Restore, Protect and Promote
+        the Pheasant Branch Conservancy and its watershed for now and for future generations to come.
       </p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem nisi voluptas fugit magni, labore officiis nobis distinctio quae.
-      </p>
-      <button type="button" class="fre-btn btn btn-lg btn-primary">I would like to become a Friend</button>
-      <button type="button" class="fre-btn btn btn-lg btn-orange">I would like to Donate</button>
+      <!-- <button type="button" class="fre-btn btn btn-lg btn-primary" data-toggle="modal" data-target="#myModal">I would like to become a Friend</button>
+      {% include donate.html val='I would like to Donate' size='btn-lg'%} -->
     </div>
   </section>
   <section class="hr">
@@ -39,38 +38,31 @@ header: carousel
   </section>
   <section class="hr">
     <h1>
-      Join the Community
+      Upcoming Events
     </h1>
-    <div class="cards">
+    <div class="cards fre-cards">
+    {% for post in site.posts limit:3 %}
       <div class="card">
-        <div class="card-image">
-          <img src="{{site.baseurl}}/public/img/member.png" alt="Friends of the Pheasant Branch Conservancy">
-        </div>
-        <div class="card-header">
-          Join Us
-        </div>
-        <div class="card-copy">
-          {% include blockquote.html quote='I love the Pheasant Branch Conservancy and am proud to be a member of this great community.' person='Henry David Thoreau' location='Middleton, WI'%}
-          <p>
-            <button class="fre-btn btn btn-primary btn-lg">
-              Join Our Community
-            </button>
-          </p>
-        </div>
+        <a href="{{ post.url | prepend: site.baseurl }}">
+          <div class="card-image">
+            <img src="{{site.baseurl}}/public/img/{{ post.image }}" alt="Responsive image">
+          </div>
+          <div class="card-header">
+            <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span><br>
+            <p class="post-link">{{ post.title }}</p>
+          </div>
+          <div class="card-copy">
+            {{ post.excerpt }}
+          </div>
+        </a>
       </div>
+    {% endfor %}
     </div>
-
   </section>
 </article>
 
-<!-- <a href="javascript:void(0)" class="flex-box">
-<img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_square.png" alt="">
-<h1 class="flex-title">Flex Box Item</h1>
-<iframe src="https://calendar.google.com/calendar/htmlembed?src=%23contacts%40group.v.calendar.google.com&ctz=America/Chicago" style="border: 0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum molestiae fugiat tenetur fugit atque dignissimos, fugiat natus vitae.</p>
-</a> -->
-
-<div class="col-md-6">
-
-</div>
-<div class="col-md-6"></div>
+<article>
+  <section>
+    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  </section>
+</article>

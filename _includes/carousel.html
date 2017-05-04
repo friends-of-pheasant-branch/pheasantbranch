@@ -7,29 +7,27 @@
   </ol>
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
-    <!-- Image 1 -->
+    {% for post in site.posts limit:1 %}
     <div class="item active">
-      <img src="http://placehold.it/1200x350/689f38/ffffff" class="img-responsive" alt="Responsive image">
-      <div class="carousel-caption">
-        <h3>SLIDE 1</h3>
-        <p>This is the caption for Slide 1.</p>
+      <div class="img-wrap">
+        <img src="{{site.baseurl}}/public/img/{{ post.image }}" class="img-responsive" alt="Responsive image">
+        <div class="carousel-caption">
+          <h3>{{ post.title }}</h3>
+          <p>{{ post.imgCaption }}</p>
+        </div>
       </div>
     </div>
-    <!-- Image 2 -->
+    {% endfor %}
+    {% for post in site.posts offset:1 limit:2 %}
     <div class="item">
-      <img src="http://placehold.it/1200x350/2196f3/ffffff" class="img-responsive" alt="Responsive image">
-      <div class="carousel-caption">
-        <h3>SLIDE 2</h3>
-        <p>This is the caption for Slide 2.</p>
+      <div class="img-wrap">
+        <img src="{{site.baseurl}}/public/img/{{ post.image }}" class="img-responsive" alt="Responsive image">
+        <div class="carousel-caption">
+          <h3>{{ post.title }}</h3>
+          <p>{{ post.imgCaption }}</p>
+        </div>
       </div>
     </div>
-    <!-- Image 3 -->
-    <div class="item">
-      <img src="http://placehold.it/1200x350/37474f/ffffff" class="img-responsive" alt="Responsive image">
-      <div class="carousel-caption">
-        <h3>SLIDE 3</h3>
-        <p>This is the caption for Slide 3.</p>
-      </div>
-    </div>
+    {% endfor %}
   </div>
 </div>

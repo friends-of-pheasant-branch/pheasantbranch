@@ -15,3 +15,7 @@
 .rotate-180 {
   @include prefix(transform, rotate(180deg));
 }
+
+.display-inline {
+  display: inline;
+}

@@ -31,6 +31,10 @@ article {
   p {
     font-size: 16px;
     font-weight: 300;
+    &.post-link {
+      font-size: 24px;
+      font-weight: 400;
+    }
   }
   ul {
     font-size: 16px;
@@ -43,9 +47,9 @@ article {
   border-bottom: 1px solid $green;
   border-top: 1px solid $green;
   .lead {
-    font-size: 1.75em;
+    font-size: 1.5em;
   }
   .lead::first-line {
-    font-size: 2.25em;
+    font-size: 1.8em;
   }
 }

@@ -1,14 +1,4 @@
+{% include befriend-modal.html %}
 <header>
-  {% if page.header == "carousel" %}
-    {% include carousel.html %}
-  {% endif %}
-  {% if page.header == "image" %}
-    {% include image.html %}
-  {% endif %}
-  {% if page.header == "split" %}
-    {% include image-split.html %}
-  {% endif %}
-  {% if page.header == "video" %}
-    {% include video.html %}
-  {% endif %}
+  {% include carousel.html %}
 </header>

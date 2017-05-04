@@ -1,16 +1,49 @@
-# Site settings
-title:                Friends of Pheasant Branch Conservancy
-email:                michael@michaelfreiman.com
-description:          UI Components created by Michael Freiman
-
-baseurl: "/pheasantbranch" # the subpath of your site, e.g. /blog
-url: "http://friends-of-pheasant-branch.github.io/pheasantbranch" # the base hostname & protocol for your site
-
-# Build settings
-markdown: kramdown
-permalink: pretty
+---
+title: Friends of Pheasant Branch Conservancy
+timezone: UTC
 collections:
-  tables:
+  posts:
+    title: Posts
     output: true
-  tabs:
+  uploads:
+    title: Uploads
     output: true
+email: your-email@domain.com
+description: 'Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for Google search
+  results) and in your feed.xml site description.
+
+'
+baseurl: 
+url: http://friendsofpheasantbranch.org
+prose:
+  rooturl: _posts
+  ignore:
+  - _config.yml
+  - index.html
+  - "/_includes"
+  - "/_layouts"
+  - "/_sass"
+  metadata:
+    _posts:
+    - name: published
+      field:
+        element: hidden
+        value: true
+    - name: layout
+      field:
+        element: hidden
+        value: post
+    - name: category
+      field:
+        element: multiselect
+        label: Add Category
+        placeholder: Select a Category
+        options:
+        - name: Restore
+          value: restore
+        - name: Education
+          value: education
+        - name: Watershed
+          value: watershed
+markdown: kramdown

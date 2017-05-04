@@ -1,12 +1,13 @@
 <div class="fre-nav-header">
-  <div class="container clearfix">
+  <div class="container-fluid clearfix">
     <a href="{{ site.baseurl }}/" class="pull-left">
       <div class="logo-wrap">
+        <img src="{{ site.baseurl }}/public/img/weblogo.jpg" class="img-responsive" alt="friends of pheasant branch Logo">
       </div>
     </a>
     <div class="pull-right">
-      <button type="button" class="fre-btn btn btn-primary">Become A Friend</button>
-      <button type="button" class="fre-btn btn btn-orange">Donate</button>
+      <button type="button" class="fre-btn btn btn-primary" data-toggle="modal" data-target="#myModal">Become A Friend</button>
+      {% include donate.html val='Donate' %}
     </div>
   </div>
 </div>
